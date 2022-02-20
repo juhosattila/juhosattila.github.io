@@ -1,0 +1,48 @@
+import { Component, OnInit } from '@angular/core';
+import { Competition } from 'src/app/models/competition.type';
+import { Conference, Publication, StudentConference } from 'src/app/models/conference.type';
+import { Language } from 'src/app/models/foreign-language.type';
+import { Job } from 'src/app/models/job.type';
+import { ProgrammingLanguage } from 'src/app/models/programming-language.type';
+import { Research } from 'src/app/models/research.type';
+import { School, SummerSchool } from 'src/app/models/school.type';
+import { ResumeService } from 'src/app/services/resume.service';
+
+@Component({
+  selector: 'app-resume',
+  templateUrl: './resume.component.html',
+  styleUrls: ['./resume.component.css']
+})
+export class ResumeComponent implements OnInit {
+
+  constructor(private resumeService: ResumeService) { }
+
+  languages: Language[]
+  programmingLanguages: ProgrammingLanguage[]
+  technologies: string[]
+  software: string[]
+  conferences: Conference[]
+  studentConferences: StudentConference[]
+  competitions: Competition[]  
+  summerSchools: SummerSchool[]
+  schools: School[]
+  publications: Publication[]
+  research: Research[]
+  jobs: Job[]
+
+  ngOnInit(): void {
+    this.languages = this.resumeService.getLanguages()
+    this.programmingLanguages = this.resumeService.getProgrammingLanguages()
+    this.technologies = this.resumeService.getTechnologies()
+    this.software = this.resumeService.getSoftware()
+    this.conferences = this.resumeService.getConferences()
+    this.studentConferences = this.resumeService.getStudentConferences()
+    this.competitions = this.resumeService.getCompetitions()
+    this.summerSchools = this.resumeService.getSummerSchools()
+    this.schools = this.resumeService.getSchools()
+    this.publications = this.resumeService.getPublications()
+    this.research = this.resumeService.getResearch()
+    this.jobs = this.resumeService.getJobs()
+  }
+
+}
