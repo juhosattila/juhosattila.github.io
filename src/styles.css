@@ -44,7 +44,7 @@
   --bs-black: #000;
   --bs-white: #fff;
   --bs-primary-rgb: 100, 100, 100;
-  --bs-secondary-rgb: /*7, 53, 85 113,169,44*/ 98,115,19;
+  --bs-secondary-rgb: 7, 53, 85;
   --bs-success-rgb: 103, 194, 156;
   --bs-info-rgb: 28, 171, 196;
   --bs-warning-rgb: 228, 198, 98;
@@ -302,6 +302,7 @@ figure {
 img,
 svg {
   vertical-align: middle;
+  fill: rgb(100, 180, 180)
 }
 
 table {

@@ -10,5 +10,6 @@ export interface School {
     dateTo: Date,
     name: string,
     result: string,
-    scholarships: string[]
+    scholarships: string[],
+    note: string
 }

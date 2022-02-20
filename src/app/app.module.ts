@@ -9,6 +9,7 @@ import { ResumeComponent } from './components/resume/resume.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { PostDetailsComponent } from './components/post-details/post-details.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ResearchComponent } from './components/research/research.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AboutComponent,
     ResumeComponent,
     PostsComponent,
-    PostDetailsComponent
+    PostDetailsComponent,
+    ResearchComponent
   ],
   imports: [
     BrowserModule,

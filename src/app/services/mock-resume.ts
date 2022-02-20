@@ -1,3 +1,4 @@
+import { NONE_TYPE } from "@angular/compiler"
 import { Competition } from "../models/competition.type"
 import { Conference, Publication, StudentConference } from "../models/conference.type"
 import { Language } from "../models/foreign-language.type"
@@ -10,6 +11,7 @@ export const LANGUAGES: Language[] = [
     { name: "English", level: "C1", institution: "Cambridge Certification", year: 2014 },
     { name: "German", level: "B1", institution: "Goethe Institut", year: 2015 },
     { name: "Romanian", level: "B2", institution: "Maturita examination", year: 2015 },
+    { name: "Hungarian", level: "Native", institution: "", year: 0},
 ]
 
 export const PROGRAMMING_LANGUAGES: ProgrammingLanguage[] = [
@@ -61,8 +63,8 @@ export const STUDENTCONFERENCES: StudentConference[] = [
             country: "Hungary",
             city: "Budapest",
             institution: "Eötvös Loránd University, Faculty of Informatics",
-            paperTitle: "CNN-based iterative regularisation for CT image reconstructions",
-            webpage: "tda.inf.elte.hu/index.php?option=com_tdk&view=results",
+            paperTitle: "CNN-based iterative regularisation for CT image reconstructions.",
+            webpage: "http://tda.inf.elte.hu/index.php?option=com_tdk&view=results",
             paperLink: "",
             authors: []
         },
@@ -77,7 +79,7 @@ export const STUDENTCONFERENCES: StudentConference[] = [
             country: "Hungary",
             city: "Budapest",
             institution: "Eötvös Loránd University, Faculty of Informatics",
-            paperTitle: "Neural network-aided tomographic reconstructions",
+            paperTitle: "Neural network-aided tomographic reconstructions.",
             webpage: "",
             paperLink: "",
             authors: []
@@ -93,12 +95,12 @@ export const STUDENTCONFERENCES: StudentConference[] = [
             country: "Hungary",
             city: "Budapest",
             institution: "Eötvös Loránd University, Faculty of Informatics",
-            paperTitle: "Neural network-aided tomographic reconstructions",
+            paperTitle: "Neural network-aided tomographic reconstructions.",
             webpage: "",
             paperLink: "",
             authors: []
         },
-        supervisor: "Dániel Hadházi",
+        supervisor: "Dániel Hadházi (BME Department of Measurement and Information Systems)",
         result: "Second prize"
     },
     {
@@ -109,21 +111,53 @@ export const STUDENTCONFERENCES: StudentConference[] = [
             country: "Hungary",
             city: "Budapest",
             institution: "Budapest University of Technology and Economics, Faculty of Electrical Engineering and Informatics",
-            paperTitle: "Egalitarian solutions in the stable roommates problem",
+            paperTitle: "Egalitarian solutions in the stable roommates problem.",
             webpage: "",
             paperLink: "",
             authors: []
         },
-        supervisor: "Dr. Ágnes Cseh (Hungarian Academy of Sciences, Centre for Economic and Regional Studies), Dr. Tamás Fleiner (BUTE Department of Computer Science and Information Theory)",
+        supervisor: "Dr. Ágnes Cseh (Hungarian Academy of Sciences, Centre for Economic and Regional Studies), Dr. Tamás Fleiner (BME Department of Computer Science and Information Theory)",
         result: "Second prize"
+    },
+    {
+        conference: {
+            date: new Date(2018, 10),
+            nameShort: "TDK",
+            nameLong: "Scientific Conference for Students",
+            country: "Hungary",
+            city: "Budapest",
+            institution: "Budapest University of Technology and Economics, Faculty of Electrical Engineering and Informatics",
+            paperTitle: "Egalitarian solutions in the stable roommates problem.",
+            webpage: "https://tdk.bme.hu/VIK/Szimu1/Egalitarianus-stabil-parositasok-a-stabil",
+            paperLink: "https://tdk.bme.hu/VIK/DownloadPaper/Egalitarianus-stabil-parositasok-a-stabil",
+            authors: []
+        },
+        supervisor: "Dr. Ágnes Cseh, Dr. Tamás Fleiner",
+        result: "First prize"
+    },
+    {
+        conference: {
+            date: new Date(2017, 10),
+            nameShort: "TDK",
+            nameLong: "Scientific Conference for Students",
+            country: "Hungary",
+            city: "Budapest",
+            institution: "Budapest University of Technology and Economics, Faculty of Electrical Engineering and Informatics",
+            paperTitle: "Performance modelling and analysis of distributed P2P download systems.",
+            webpage: "https://tdk.bme.hu/VIK/Halozatok2/2131",
+            paperLink: "https://tdk.bme.hu/VIK/DownloadPaper/2131",
+            authors: []
+        },
+        supervisor: "Dr. János Levendovszky (BME Department of Networked Systems and Services)",
+        result: "Third prize"
     }
 ]
 
 export const COMPETITIONS: Competition[] = [
-    { name: "BUTE Mathematics Competition", year: 2021, result: "First Prize" },
-    { name: "BUTE Mathematics Competition", year: 2020, result: "Third Prize" },
+    { name: "BME Mathematics Competition", year: 2021, result: "First Prize" },
+    { name: "BME Mathematics Competition", year: 2020, result: "Third Prize" },
     { name: "25th International Mathematics Competition for University Students, Blagoevgrad, Bulgaria", year: 2018, result: "Second Prize" },
-    { name: "BUTE Mathematics Competition", year: 2018, result: "Second Prize" },
+    { name: "BME Mathematics Competition", year: 2018, result: "Second Prize" },
     { name: "40th Hajós György National Mathematics Competition", year: 2018, result: "Individual First Prize" },
 ]
 
@@ -153,30 +187,36 @@ export const SUMMER_SCHOOLS: SummerSchool[] = [
 
 export const SCHOOLS: School[] = [
     { dateFrom: new Date(2021, 3), dateTo: new Date(2021, 8), 
-        name: "Technical University of Munich (TU München) (One semester within the Erasmus program).", 
-        result: "", scholarships: [] },
+        name: "Technical University of Munich (TU München)", 
+        result: "", 
+        scholarships: [],  
+        note: "One semester within the Erasmus program"
+    },
     {
         dateFrom: new Date(2018, 8), dateTo: new Date(2021, 8),
-        name: "MSc studies in Computer Science, Budapest University of Technology and Economics, Faculty of Electrical Engineering and Informatics (BUTE).",
+        name: "MSc studies in Computer Science, Budapest University of Technology and Economics, Faculty of Electrical Engineering and Informatics (BME)",
         result: "Excellent with highest honours",
-        scholarships: ["National scholarship for outstanding students in tertiary education."]
+        scholarships: ["National scholarship for outstanding students in tertiary education."],
+        note: ""
     },
     {
         dateFrom: new Date(2015, 8), dateTo: new Date(2018, 4),
-        name: "BSc studies in Computer Science (BUTE)",
+        name: "BSc studies in Computer Science (BME)",
         result: "Excellent with highest honours",
         scholarships: [
             "Admitted to the advanced level study program of the faculty (IMSc).",
             "University scholarship for outstanding academic results.",
             "National scholarship for outstanding students in tertiary education."
-        ]
+        ],
+        note: ""
     },
     {
         dateFrom: new Date(2011, 8),
         dateTo: new Date(2015, 4),
         name: "Székely Mikó High School, bilingual Mathematics-Informatics program (Sepsiszentgyörgy, Romania)",
         result: "Maturita examination (average: 9.88 out of 10)",
-        scholarships: []
+        scholarships: [],
+        note: ""
     }
 ]
 
@@ -190,7 +230,7 @@ export const RESEARCH: Research[] = [
         dateTo: new Date(2021, 4),
         title: "Medical (CT) image reconstructions with distinguished interest in CNN-based regularisation and iterative techniques.",
         supervisor: "Dániel Hadházi",
-        supervisorsInstitution: "BUTE, Department of Measurement and Information Systems",
+        supervisorsInstitution: "BME, Department of Measurement and Information Systems",
         supporter: "Ministry of Human Capacities under its New National Excellence Program (one year + half year)."
     },
     {
@@ -206,7 +246,7 @@ export const RESEARCH: Research[] = [
         dateTo: new Date(2017, 11),
         title: "Performance modelling and analysis of distributed P2P download systems.",
         supervisor: "Dr. János Levendovszky",
-        supervisorsInstitution: "BUTE Department of Networked Systems and Services",
+        supervisorsInstitution: "BME Department of Networked Systems and Services",
         supporter: ""
     }
 ]
@@ -223,7 +263,7 @@ export const JOBS: Job[] = [
         dateFrom: new Date(2016, 6),
         dateTo: new Date(2019, 11),
         title: "Teaching Assistant",
-        institution: "Budapest University of Technology and Economics (BUTE), Faculty of Electrical Engineering and Informatics, Department of Computer Science and Information Theory",
+        institution: "Budapest University of Technology and Economics (BME), Faculty of Electrical Engineering and Informatics, Department of Computer Science and Information Theory",
         details:
             [
                 "Introduction to the Theory of Computing 1 (linear algebra, seminar)",

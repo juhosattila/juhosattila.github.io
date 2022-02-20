@@ -21,13 +21,9 @@ export class ResumeComponent implements OnInit {
   programmingLanguages: ProgrammingLanguage[]
   technologies: string[]
   software: string[]
-  conferences: Conference[]
-  studentConferences: StudentConference[]
   competitions: Competition[]  
   summerSchools: SummerSchool[]
   schools: School[]
-  publications: Publication[]
-  research: Research[]
   jobs: Job[]
 
   ngOnInit(): void {
@@ -35,13 +31,9 @@ export class ResumeComponent implements OnInit {
     this.programmingLanguages = this.resumeService.getProgrammingLanguages()
     this.technologies = this.resumeService.getTechnologies()
     this.software = this.resumeService.getSoftware()
-    this.conferences = this.resumeService.getConferences()
-    this.studentConferences = this.resumeService.getStudentConferences()
     this.competitions = this.resumeService.getCompetitions()
     this.summerSchools = this.resumeService.getSummerSchools()
     this.schools = this.resumeService.getSchools()
-    this.publications = this.resumeService.getPublications()
-    this.research = this.resumeService.getResearch()
     this.jobs = this.resumeService.getJobs()
   }
 
