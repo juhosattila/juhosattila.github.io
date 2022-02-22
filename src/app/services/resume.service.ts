@@ -1,12 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Competition } from '../models/competition.type';
-import { Conference, Publication, StudentConference } from '../models/conference.type';
 import { Language } from '../models/foreign-language.type';
 import { Job } from '../models/job.type';
 import { ProgrammingLanguage } from '../models/programming-language.type';
-import { Research } from '../models/research.type';
 import { School, SummerSchool } from '../models/school.type';
-import { COMPETITIONS, CONFERENCES, JOBS, LANGUAGES, PROGRAMMING_LANGUAGES, PUBLICATIONS, RESEARCH, SCHOOLS, SOFTWARE, STUDENTCONFERENCES, SUMMER_SCHOOLS, TECHNOLOGIES } from './mock-resume';
+import resume from '../../assets/json-data/resume.json'
 
 @Injectable({
   providedIn: 'root'
@@ -16,39 +14,24 @@ export class ResumeService {
   constructor() { }
 
   getJobs(): Job[] {
-    return JOBS
-  }
-  getResearch(): Research[] {
-    return RESEARCH
-  }
-  getPublications(): Publication[] {
-    return PUBLICATIONS
+    return resume.workingExperience
   }
   getSchools(): School[] {
-    return SCHOOLS
+    return resume.education
   }
   getSummerSchools(): SummerSchool[] {
-    return SUMMER_SCHOOLS
+    return resume.summerSchools
   }
   getCompetitions(): Competition[] {
-    return COMPETITIONS
-  }
-  getStudentConferences(): StudentConference[] {
-    return STUDENTCONFERENCES
-  }
-  getConferences(): Conference[] {
-    return CONFERENCES
+    return resume.competitions
   }
   getLanguages(): Language[] {
-    return LANGUAGES
+    return resume.languages
   }
   getProgrammingLanguages(): ProgrammingLanguage[] {
-    return PROGRAMMING_LANGUAGES
-  }
-  getTechnologies(): string[] {
-    return TECHNOLOGIES
+    return resume.programmingLanguagesAndTech
   }
   getSoftware(): string[] {
-    return SOFTWARE
+    return resume.software
   }
 }

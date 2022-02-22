@@ -1,7 +1,7 @@
 export interface Post{
     id: number
     title: string
-    date: Date
+    date: string
     description: string | null
     content: string
 }

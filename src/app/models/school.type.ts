@@ -6,8 +6,8 @@ export interface SummerSchool {
 }
 
 export interface School {
-    dateFrom: Date,
-    dateTo: Date,
+    dateFrom: string,
+    dateTo: string,
     name: string,
     result: string,
     scholarships: string[],

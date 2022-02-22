@@ -1,5 +1,5 @@
 export interface Conference {
-    date: Date,
+    date: string,
     nameShort: string,
     nameLong: string,
     country: string,

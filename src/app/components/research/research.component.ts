@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Conference, Publication, StudentConference } from 'src/app/models/conference.type';
 import { Research } from 'src/app/models/research.type';
-import { ResumeService } from 'src/app/services/resume.service';
+import { ResearchService } from 'src/app/services/research.service';
 
 @Component({
   selector: 'app-research',
@@ -10,7 +10,7 @@ import { ResumeService } from 'src/app/services/resume.service';
 })
 export class ResearchComponent implements OnInit {
 
-  constructor(private resumeService: ResumeService) { }
+  constructor(private researchService: ResearchService) { }
   
   publications: Publication[]
   research: Research[]  
@@ -18,10 +18,10 @@ export class ResearchComponent implements OnInit {
   studentConferences: StudentConference[]
 
   ngOnInit(): void {    
-    this.conferences = this.resumeService.getConferences()
-    this.studentConferences = this.resumeService.getStudentConferences()    
-    this.publications = this.resumeService.getPublications()
-    this.research = this.resumeService.getResearch()
+    this.conferences = this.researchService.getConferences()
+    this.studentConferences = this.researchService.getStudentConferences()    
+    this.publications = this.researchService.getPublications()
+    this.research = this.researchService.getResearch()
   }
 
 }

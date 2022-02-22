@@ -1,6 +1,6 @@
 export interface Research {
-    dateFrom: Date,
-    dateTo: Date,
+    dateFrom: string,
+    dateTo: string,
     title: string,
     supervisor: string,
     supervisorsInstitution: string,

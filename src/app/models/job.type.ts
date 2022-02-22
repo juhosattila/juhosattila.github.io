@@ -1,6 +1,6 @@
 export interface Job {
-    dateFrom: Date,
-    dateTo: Date,
+    dateFrom: string,
+    dateTo: string,
     title: string,
     institution: string,
     details: string[]
