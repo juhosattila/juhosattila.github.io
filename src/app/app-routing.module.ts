@@ -12,7 +12,11 @@ const routes: Routes = [
   { path: "resume", component: ResumeComponent },
   { path: "research", component: ResearchComponent },
   { path: "posts", component: PostsComponent },
-  { path: "post/:id", component: PostDetailsComponent }
+  { path: "post/:id", component: PostDetailsComponent },
+
+  //{ path: '', redirectTo: '/search', pathMatch: 'full' },
+
+  { path: '**', redirectTo: '/about'}
 ];
 
 @NgModule({
