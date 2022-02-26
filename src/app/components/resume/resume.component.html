@@ -185,24 +185,7 @@
         </div>
     </div>
     <div class="display-6 my-5 text-center">Programming skills and languages</div>
-    <div *ngIf="programmingLanguages" class="my-5">
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col px-4 py-2">Intermediate</div>
-        </div>
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-7 d-flex flex-wrap flex-row bd-highlight mb-3">
-                <div *ngFor="let prog of programmingLanguages">
-                    <div *ngIf="prog.level==Level.intermediate">
-                        <div class="d-flex flex-row">
-                            <span class="p-2 m-2 badge bg-dark">{{prog.name}}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-2"></div>
-        </div>
+    <div *ngIf="programmingLanguages" class="my-5">        
         <div class="row">
             <div class="col-3"></div>
             <div class="col px-4 py-2">Advanced</div>
@@ -213,6 +196,23 @@
                 <div *ngFor="let prog of programmingLanguages">
                     <div *ngIf="prog.level==Level.advanced">
                         <div class="d-flex flex-row my-0">
+                            <span class="p-2 m-2 badge bg-dark">{{prog.name}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col px-4 py-2">Intermediate</div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-7 d-flex flex-wrap flex-row bd-highlight mb-3">
+                <div *ngFor="let prog of programmingLanguages">
+                    <div *ngIf="prog.level==Level.intermediate">
+                        <div class="d-flex flex-row">
                             <span class="p-2 m-2 badge bg-dark">{{prog.name}}</span>
                         </div>
                     </div>
