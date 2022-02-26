@@ -95,67 +95,67 @@
     "programmingLanguagesAndTech": [
         {
             "name": "C++ (98/11)",
-            "level": 4
+            "level": "advanced"
         },
         {
             "name": "C#",
-            "level": 4
+            "level": "advanced"
         },
         {
             "name": "CUDA",
-            "level": 3
+            "level": "intermediate"
         },
         {
             "name": "Elixir",
-            "level": 3
+            "level": "intermediate"
         },
         {
             "name": "Java",
-            "level": 4
+            "level":  "advanced"
         },
         {
             "name": "JavaScript",
-            "level": 4
+            "level":  "advanced"
         },
         {
             "name": "Matlab",
-            "level": 3
+            "level": "intermediate"
         },
         {
             "name": "OpenCL",
-            "level": 3
+            "level": "intermediate"
         },
         {
             "name": "OpenGL",
-            "level": 4
+            "level":  "advanced"
         },
         {
             "name": "Prolog",
-            "level": 3
+            "level": "intermediate"
         },
         {
             "name": "Python",
-            "level": 4
+            "level":  "advanced"
         },
         {
             "name": "SQL",
-            "level": 4
+            "level":  "advanced"
         },
         {
             "name": "UNIX shell scripting",
-            "level": 3
+            "level": "intermediate"
         },
         {
             "name": "WebGL",
-            "level": 4
+            "level":  "advanced"
         },
         {
             "name": "TensorFlow",
-            "level": 4
+            "level":  "advanced"
         },
         {
             "name": "NumPy",
-            "level": 5
+            "level": "advanced"
         }
     ],
     "software": [

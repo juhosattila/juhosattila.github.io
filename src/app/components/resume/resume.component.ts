@@ -5,6 +5,7 @@ import { Job } from 'src/app/models/job.type';
 import { ProgrammingLanguage } from 'src/app/models/programming-language.type';
 import { School, SummerSchool } from 'src/app/models/school.type';
 import { ResumeService } from 'src/app/services/resume.service';
+import { Level } from 'src/app/models/programming-language.type';
 
 @Component({
   selector: 'app-resume',
@@ -33,6 +34,8 @@ export class ResumeComponent implements OnInit {
     this.schools = this.resumeService.getSchools()
     this.jobs = this.resumeService.getJobs()
   }
+
+  get Level(){ return Level}
 
   isEven(p: ProgrammingLanguage) : boolean {
     var index = this.programmingLanguages.indexOf(p)

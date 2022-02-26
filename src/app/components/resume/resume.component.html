@@ -184,89 +184,55 @@
             </div>
         </div>
     </div>
-    <div>
-        <div class="display-6 my-5 text-center">Programming skills and languages</div>
-        <div *ngIf="programmingLanguages" class="my-5">
-            <div class="my-3 text-center">Programming languages</div>
-            <div class="row list-group justify-content-center">
-                <div *ngFor="let prog of programmingLanguages" class="align-items-center">
-                    <div class="d-flex justify-content-between my-0">
-                        <div class="col-3"></div>
-                        <div class="col-4">
-                            {{prog.name}}
+    <div class="display-6 my-5 text-center">Programming skills and languages</div>
+    <div *ngIf="programmingLanguages" class="my-5">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col px-4 py-2">Intermediate</div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-7 d-flex flex-wrap flex-row bd-highlight mb-3">
+                <div *ngFor="let prog of programmingLanguages">
+                    <div *ngIf="prog.level==Level.intermediate">
+                        <div class="d-flex flex-row">
+                            <span class="p-2 m-2 badge bg-dark">{{prog.name}}</span>
                         </div>
-                        <div class="col-3" *ngIf="prog.level==1">
-                            <div class="progress">
-                                <div [ngClass]="{'progress-bar-striped' : isEven(prog)}" class="progress-bar bg-primary" role="progressbar" style="width: 20%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="col-3" *ngIf="prog.level==2">
-                            <div class="progress">
-                                <div [ngClass]="{'progress-bar-striped' : isEven(prog)}" class="progress-bar bg-primary" role="progressbar" style="width: 40%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="col-3" *ngIf="prog.level==3">
-                            <div class="progress">
-                                <div [ngClass]="{'progress-bar-striped' : isEven(prog)}" class="progress-bar bg-primary" role="progressbar" style="width: 60%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="col-3" *ngIf="prog.level==4">
-                            <div class="progress">
-                                <div [ngClass]="{'progress-bar-striped' : isEven(prog)}" class="progress-bar bg-primary" role="progressbar" style="width: 80%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="col-3" *ngIf="prog.level==5">
-                            <div class="progress">
-                                <div [ngClass]="{'progress-bar-striped' : isEven(prog)}" class="progress-bar bg-primary" role="progressbar" style="width: 100%"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="col-2"></div>
-                    </div>
-                    <div class="d-flex justify-content-between my-0">
-                        <div class="col-3"></div>
-                        <hr class="col-7">
-                        <div class="col-2"></div>
                     </div>
                 </div>
             </div>
+            <div class="col-2"></div>
         </div>
-
-        <div *ngIf="technologies" class="my-5">
-            <div class="my-3 text-center">Other Technologies</div>
-            <div class="list-group">
-                <div class="m-2 d-flex justify-content-start">
-                    <div class="col-3"></div>
-                    <div *ngFor="let tech of technologies" class="col-2">
-                        {{tech}}
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col px-4 py-2">Advanced</div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-7 d-flex flex-wrap flex-row bd-highlight mb-3">
+                <div *ngFor="let prog of programmingLanguages">
+                    <div *ngIf="prog.level==Level.advanced">
+                        <div class="d-flex flex-row my-0">
+                            <span class="p-2 m-2 badge bg-dark">{{prog.name}}</span>
+                        </div>
                     </div>
-                    <div class="col-2"></div>
-                </div>
-                <div class="d-flex justify-content-between my-0">
-                    <div class="col-3"></div>
-                    <hr class="col-7">
-                    <div class="col-2"></div>
                 </div>
             </div>
+            <div class="col-2"></div>
         </div>
-        <div *ngIf="software" class="my-5">
-            <div class="my-3 text-center">Software knowledge</div>
-            <div class="list-group">
-                <div class="m-2 d-flex justify-content-start">
-                    <div class="col-3"></div>
-                    <div *ngFor="let soft of software" class="col mx-2">
-                        {{soft}}
+        <div *ngIf="software">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col px-4 py-2">Software knowledge</div>
+            </div>
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-7 d-flex flex-wrap flex-row bd-highlight mb-3">
+                    <div *ngFor="let soft of software">
+                        <div class="d-flex flex-row my-0">
+                            <div class="p-2 m-2 badge bg-dark">{{soft}}</div>
+                        </div>
                     </div>
-                    <div class="col-2"></div>
-                </div>
-                <div class="d-flex justify-content-between my-0">
-                    <div class="col-3"></div>
-                    <hr class="col-7">
-                    <div class="col-2"></div>
                 </div>
             </div>
         </div>

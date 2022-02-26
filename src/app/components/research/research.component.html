@@ -15,7 +15,7 @@
                     </div>
                     <div class="col-7">
                         <div>
-                            {{pub.title | uppercase}}
+                           <a href="{{pub.paperLink}}">{{pub.title | uppercase}}</a>
                         </div>
                         <div *ngIf="pub.authors" class="my-2">
                             <div class="text-muted">

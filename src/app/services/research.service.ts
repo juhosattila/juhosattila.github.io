@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import research from '../../assets/json-data/research.json'
-import { Conference, Publication, StudentConference } from '../models/conference.type';
+import { Conference, StudentConference } from '../models/conference.type';
+import { Publication } from '../models/publication.type';
 import { Research } from '../models/research.type';
 
 @Injectable({

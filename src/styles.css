@@ -302,7 +302,7 @@ figure {
 img,
 svg {
   vertical-align: middle;
-  fill: rgb(100, 180, 180)
+  /*fill: rgb(100, 180, 180)*/
 }
 
 table {

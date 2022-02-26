@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Conference, Publication, StudentConference } from 'src/app/models/conference.type';
+import { Conference, StudentConference } from 'src/app/models/conference.type';
+import { Publication } from 'src/app/models/publication.type';
 import { Research } from 'src/app/models/research.type';
 import { ResearchService } from 'src/app/services/research.service';
 

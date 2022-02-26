@@ -16,10 +16,3 @@ export interface StudentConference {
     supervisor: string,
     result: string
 }
-
-export interface Publication {
-    date: number,
-    title: string,
-    journal: string,
-    authors: string[]
-}
