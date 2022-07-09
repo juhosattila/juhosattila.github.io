@@ -10,12 +10,11 @@ export class BlogService {
 
   constructor() { }
 
-  getPosts(): Post[] {
-    return blog.posts
+  public getPosts(): Post[] {
+    return blog.posts;
   }
-
-  getPostById(id: number): Observable<Post> | null {
+  public getPostById(id: number): Observable<Post> | null {
     let post = blog.posts.find(element => element.id == id)
-    return post ? of(post) : null
+    return post ? of(post) : null;
   }
 }
