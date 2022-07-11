@@ -10,7 +10,9 @@
                     </h5>
                 </div>
                 <div class="card-body">
-                    <h5 class="card-text">{{post.content}}</h5>
+                    <markdown [src]="post.content" emoji ngPreserveWhitespaces lineNumbers
+                        katex clipboard [clipboardButtonComponent]="clipboardButton">
+                    </markdown>
                 </div>
                 <div class="card-footer d-flex justify-content-between">
                     <div *ngIf="prev">
@@ -36,7 +38,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="card" *ngIf="post == null || post == undefined" class="row my-5 text-center text-primary">
         <h3>
             Post not found!

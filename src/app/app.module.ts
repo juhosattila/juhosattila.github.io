@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-// import { MarkdownModule } from 'ngx-markdown';
+import { MarkdownModule } from 'ngx-markdown';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './components/app.component';
@@ -11,6 +11,7 @@ import { PostsComponent } from './components/posts/posts.component';
 import { PostDetailsComponent } from './components/post-details/post-details.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ResearchComponent } from './components/research/research.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ResearchComponent } from './components/research/research.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    //MarkdownModule.forRoot()
+    HttpClientModule,
+    MarkdownModule.forRoot({ loader: HttpClient })
   ],
   providers: [],
   bootstrap: [AppComponent]
