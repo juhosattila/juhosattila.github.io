@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Competition } from 'src/app/models/competition.type';
 import { Language } from 'src/app/models/foreign-language.type';
 import { Job } from 'src/app/models/job.type';
-import { ProgrammingLanguage } from 'src/app/models/programming-language.type';
+import { ProgrammingLanguage, Level } from 'src/app/models/programming-language.type';
 import { School, SummerSchool } from 'src/app/models/school.type';
 import { ResumeService } from 'src/app/services/resume.service';
-import { Level } from 'src/app/models/programming-language.type';
+import { AboutService } from 'src/app/services/about.service';
 
 @Component({
   selector: 'app-resume',
@@ -14,18 +14,26 @@ import { Level } from 'src/app/models/programming-language.type';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor(private resumeService: ResumeService) { }
+  constructor(private resumeService: ResumeService, private aboutService: AboutService) { }
 
+  cv: string = "assets/pdf/cv.pdf"
+  github: string
+  linkedin: string
+  scholar: string
   languages: Language[]
   programmingLanguages: ProgrammingLanguage[]
   technologies: string[]
   software: string[]
-  competitions: Competition[]  
+  competitions: Competition[]
   summerSchools: SummerSchool[]
   schools: School[]
   jobs: Job[]
 
   ngOnInit(): void {
+    this.github = this.aboutService.getGithub()
+    this.linkedin = this.aboutService.getLinkedin()
+    this.scholar = this.aboutService.getScholar()
+
     this.languages = this.resumeService.getLanguages()
     this.programmingLanguages = this.resumeService.getProgrammingLanguages()
     this.software = this.resumeService.getSoftware()
@@ -35,10 +43,14 @@ export class ResumeComponent implements OnInit {
     this.jobs = this.resumeService.getJobs()
   }
 
-  get Level(){ return Level}
+  get Level() { return Level }
 
-  isEven(p: ProgrammingLanguage) : boolean {
+  isEven(p: ProgrammingLanguage): boolean {
     var index = this.programmingLanguages.indexOf(p)
     return index % 2 == 0 ? true : false
+  }
+
+  public downloadCv(){
+
   }
 }

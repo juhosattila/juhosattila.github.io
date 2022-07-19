@@ -1,240 +1,261 @@
 <div class="container">
-    <div class="display-4 mt-5 text-center">Résumé</div>
+    <div class="display-4 mt-5 text-center">Résumé
+        <a class="p-0" href="{{cv}}" download="Juhos_CV">
+            <img width=30 src="assets/icons/download.svg"
+            alt="download" />
+        </a>
+    </div>
     <hr>
 
-    <div *ngIf="jobs" class="my-5">
-        <div class="display-6 my-5 text-center">Working experience</div>
-        <div class="row list-group justify-content-center">
-            <div *ngFor="let job of jobs" class="align-items-center">
-                <div class="d-flex justify-content-between my-0">
-                    <div class="col-1"></div>
-                    <div class="col-2">
-                        {{job.dateFrom}} - {{job.dateTo}}
-                    </div>
-                    <div class="col-7">
-                        <div>
-                            {{job.title | uppercase}}
+    <div class="row">
+
+        <div class="col-8">
+            <div *ngIf="jobs" class="my-5">
+                <div class="display-6 my-5 text-center">Working experience</div>
+                <div class="row list-group justify-content-center">
+                    <div *ngFor="let job of jobs" class="align-items-center">
+                        <div class="d-flex justify-content-between my-0">
+                            <div class="col-3">
+                                {{job.dateFrom}} - {{job.dateTo}}
+                            </div>
+                            <div class="col-8">
+                                <div>
+                                    {{job.title | uppercase}}
+                                </div>
+                                <div class="my-2 text-muted col-9">
+                                    {{job.institution}}
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
                         </div>
-                        <div class="my-2 text-muted col-9">
-                            {{job.institution}}
+                        <div *ngIf="job.details">
+                            <div *ngFor="let detail of job.details" class="row">
+                                <div class="col-3"></div>
+                                <div class="col-7">
+                                    {{detail}}
+                                </div>
+                                <div class="col-2"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="col-3"></div>
+                            <hr class="col-7">
+                            <div class="col-2"></div>
                         </div>
                     </div>
-                    <div class="col-2"></div>
                 </div>
-                <div *ngIf="job.details">
-                    <div *ngFor="let detail of job.details" class="row">
-                        <div class="col-3"></div>
-                        <div class="col-7">
-                            {{detail}}
+            </div>
+
+            <div *ngIf="schools" class="my-5">
+                <div class="display-6 my-5 text-center">Education</div>
+                <div class="row list-group justify-content-center">
+                    <div *ngFor="let school of schools" class="align-items-center">
+                        <div class="d-flex justify-content-between my-0">
+                            <div class="col-3">
+                                {{school.dateFrom}} - {{school.dateTo}}
+                            </div>
+                            <div class="col-7">
+                                <div>
+                                    {{school.name | uppercase}}
+                                </div>
+                                <div *ngIf="school.note">
+                                    <div class="text-muted">
+                                        {{school.note}}
+                                    </div>
+                                </div>
+                                <div class="my-2 text-muted">
+                                    <div *ngIf="school.scholarships.length">
+                                        <div class="text-muted">
+                                            Scholarships
+                                        </div>
+                                        <div *ngFor="let scholarship of school.scholarships">
+                                            <div>
+                                                {{scholarship}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div *ngIf="school.result">
+                                    <div class="text-muted">
+                                        Diploma result
+                                    </div>
+                                    <div>
+                                        {{school.result}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2"></div>
                         </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="col-3"></div>
+                            <hr class="col-7">
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngIf="summerSchools" class="my-5">
+                <div class="display-6 my-5 text-center">Summer Schools</div>
+                <div class="row list-group justify-content-center">
+                    <div *ngFor="let school of summerSchools" class="align-items-center">
+                        <div class="d-flex justify-content-between my-0">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                {{school.year}}
+                            </div>
+                            <div class="col-7">
+                                <div>
+                                    <a *ngIf="school.webpage" href="{{school.webpage}}"> {{school.name | uppercase}}</a>
+                                    <a *ngIf="!school.webpage"> {{school.name | uppercase}}</a>
+                                </div>
+                                <div class="my-2">
+                                    <div *ngIf="school.topics.length">
+                                        <div class="text-muted">
+                                            Topics
+                                        </div>
+                                        <div *ngFor="let topic of school.topics">
+                                            <div>
+                                                {{topic}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="col-3"></div>
+                            <hr class="col-7">
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div *ngIf="competitions" class="my-5">
+                <div class="display-6 my-5 text-center">Competitions</div>
+                <div class="row list-group justify-content-center">
+                    <div *ngFor="let comp of competitions" class="align-items-center">
+                        <div class="d-flex justify-content-between my-0">
+                            <div class="col-1"></div>
+                            <div class="col-2">
+                                {{comp.year}}
+                            </div>
+                            <div class="col-6">
+                                {{comp.name | uppercase}}
+                            </div>
+                            <div class="col-1">
+                                {{comp.result}}
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                        <div class="d-flex justify-content-between my-0">
+                            <div class="col-3"></div>
+                            <hr class="col-7">
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-4 my-5 col-lg p-0 rounded-3">
+            <div class="rounded-3 pb-4 text-light bg-secondary blog">
+                <div class="col-xl col-lg-auto text-lg-center">
+                    <img width="200" class="img-fluid mt-5 rounded-pill mb-3 mb-lg-0 ms-lg-0" src="assets/images/cv_casual_1.JPG"
+                        alt="profile" />
+                </div>
+                <div class="mt-5 text-center">
+                    <a href="{{github}}" class="mx-2">
+                        <img width=40 class="img-fluid rounded-pill mb-lg-0 ms-lg-0" src="assets/icons/github.svg"
+                        alt="github" />
+                    </a>
+                    <a href="{{linkedin}}" class="mx-2">
+                        <img width=40 class="img-fluid rounded-pill mb-lg-0 ms-lg-0" src="assets/icons/linkedin.svg"
+                        alt="linkedin" />
+                    </a>
+                    <a href="{{scholar}}" class="mx-2">
+                        <img width=40 class="img-fluid rounded-pill mb-lg-0 ms-lg-0" src="assets/icons/mortarboard-fill.svg"
+                        alt="scholar" />
+                    </a>
+                </div>
+                <div class="display-6 my-5 text-center">Skills & languages</div>
+                <div *ngIf="languages" class="my-5">
+                    <div class="row list-group justify-content-center">
+                        <div *ngFor="let lang of languages" class="align-items-center">
+                            <div class="d-flex justify-content-between my-0">
+                                <div class="col-2"></div>
+                                <div class="col-6">
+                                    {{lang.name | uppercase}}
+                                </div>
+                                <div class="col-4">
+                                    {{lang.level}}
+                                </div>
+                            </div>
+                            <div *ngIf="lang.institution" class="d-flex justify-content-between my-0 text-white-50">
+                                <div class="col-2"></div>
+                                <div class="col-6">
+                                    {{lang.institution}}
+                                </div>
+                                <div class="col-4">
+                                    {{lang.year}}
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between my-0">
+                                <div class="col-1"></div>
+                                <hr class="col-9">
+                                <div class="col-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div *ngIf="programmingLanguages" class="my-5">
+                    <div class="px-4 py-2 text-center">Advanced</div>
+                    <div class="row">
                         <div class="col-2"></div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between">
-                    <div class="col-3"></div>
-                    <hr class="col-7">
-                    <div class="col-2"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div *ngIf="schools" class="my-5">
-        <div class="display-6 my-5 text-center">Education</div>
-        <div class="row list-group justify-content-center">
-            <div *ngFor="let school of schools" class="align-items-center">
-                <div class="d-flex justify-content-between my-0">
-                    <div class="col-1"></div>
-                    <div class="col-2">
-                        {{school.dateFrom | date: "yyyy.MM" }} - {{school.dateTo | date: "yyyy.MM"}}
-                    </div>
-                    <div class="col-7">
-                        <div>
-                            {{school.name | uppercase}}
-                        </div>
-                        <div *ngIf="school.note">
-                            <div class="text-muted">
-                                {{school.note}}
-                            </div>
-                        </div>
-                        <div class="my-2 text-muted">
-                            <div *ngIf="school.scholarships.length">
-                                <div class="text-muted">
-                                    Scholarships
-                                </div>
-                                <div *ngFor="let scholarship of school.scholarships">
-                                    <div>
-                                        {{scholarship}}
+                        <div class="col-9 d-flex flex-wrap flex-row bd-highlight mb-3">
+                            <div *ngFor="let prog of programmingLanguages">
+                                <div *ngIf="prog.level==Level.advanced">
+                                    <div class="d-flex flex-row my-0">
+                                        <span class="p-2 m-2 badge bg-white text-secondary">{{prog.name}}</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div *ngIf="school.result">
-                            <div class="text-muted">
-                                Diploma result
-                            </div>
-                            <div>
-                                {{school.result}}
-                            </div>
-                        </div>
+                        <div class="col-1"></div>
                     </div>
-                    <div class="col-2"></div>
-                </div>
-
-                <div class="d-flex justify-content-between">
-                    <div class="col-3"></div>
-                    <hr class="col-7">
-                    <div class="col-2"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div *ngIf="summerSchools" class="my-5">
-        <div class="display-6 my-5 text-center">Summer Schools</div>
-        <div class="row list-group justify-content-center">
-            <div *ngFor="let school of summerSchools" class="align-items-center">
-                <div class="d-flex justify-content-between my-0">
-                    <div class="col-2"></div>
-                    <div class="col-1">
-                        {{school.year}}
-                    </div>
-                    <div class="col-7">
-                        <div>
-                            <a *ngIf="school.webpage" href="{{school.webpage}}"> {{school.name | uppercase}} </a>
-                        </div>
-                        <div class="my-2">
-                            <div *ngIf="school.topics.length">
-                                <div class="text-muted">
-                                    Topics
+                    <div class="px-4 py-2 text-center">Intermediate</div>
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-9 d-flex flex-wrap flex-row bd-highlight mb-3">
+                            <div *ngFor="let prog of programmingLanguages">
+                                <div *ngIf="prog.level==Level.intermediate">
+                                    <div class="d-flex flex-row">
+                                        <span class="p-2 m-2 badge bg-white text-secondary">{{prog.name}}</span>
+                                    </div>
                                 </div>
-                                <div *ngFor="let topic of school.topics">
-                                    <div>
-                                        {{topic}}
+                            </div>
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                    <div *ngIf="software">
+                        <div class="px-4 py-2 text-center">Software knowledge</div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-9 d-flex flex-wrap flex-row bd-highlight mb-3">
+                                <div *ngFor="let soft of software">
+                                    <div class="d-flex flex-row my-0">
+                                        <div class="p-2 m-2 badge bg-white text-secondary">{{soft}}</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-2"></div>
-                </div>
-
-                <div class="d-flex justify-content-between">
-                    <div class="col-3"></div>
-                    <hr class="col-7">
-                    <div class="col-2"></div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div *ngIf="competitions" class="my-5">
-        <div class="display-6 my-5 text-center">Competitions</div>
-        <div class="row list-group justify-content-center">
-            <div *ngFor="let comp of competitions" class="align-items-center">
-                <div class="d-flex justify-content-between my-0">
-                    <div class="col-2"></div>
-                    <div class="col-1">
-                        {{comp.year}}
-                    </div>
-                    <div class="col-6">
-                        {{comp.name | uppercase}}
-                    </div>
-                    <div class="col-1">
-                        {{comp.result}}
-                    </div>
-                    <div class="col-2"></div>
-                </div>
-                <div class="d-flex justify-content-between my-0">
-                    <div class="col-3"></div>
-                    <hr class="col-7">
-                    <div class="col-2"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div *ngIf="languages" class="my-5">
-        <div class="display-6 my-5 text-center">Languages</div>
-        <div class="row list-group justify-content-center">
-            <div *ngFor="let lang of languages" class="align-items-center">
-                <div class="d-flex justify-content-between my-0">
-                    <div class="col-3"></div>
-                    <div class="col-6">
-                        {{lang.name | uppercase}}
-                    </div>
-                    <div class="col-3">
-                        {{lang.level}}
-                    </div>
-                </div>
-                <div *ngIf="lang.institution" class="d-flex justify-content-between my-0">
-                    <div class="col-3"></div>
-                    <div class="col-6">
-                        {{lang.institution}}
-                    </div>
-                    <div class="col-3 text-muted">
-                        {{lang.year}}
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between my-0">
-                    <div class="col-3"></div>
-                    <hr class="col-7">
-                    <div class="col-2"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="display-6 my-5 text-center">Programming skills and languages</div>
-    <div *ngIf="programmingLanguages" class="my-5">        
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col px-4 py-2">Advanced</div>
-        </div>
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-7 d-flex flex-wrap flex-row bd-highlight mb-3">
-                <div *ngFor="let prog of programmingLanguages">
-                    <div *ngIf="prog.level==Level.advanced">
-                        <div class="d-flex flex-row my-0">
-                            <span class="p-2 m-2 badge bg-dark">{{prog.name}}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-2"></div>
-        </div>
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col px-4 py-2">Intermediate</div>
-        </div>
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-7 d-flex flex-wrap flex-row bd-highlight mb-3">
-                <div *ngFor="let prog of programmingLanguages">
-                    <div *ngIf="prog.level==Level.intermediate">
-                        <div class="d-flex flex-row">
-                            <span class="p-2 m-2 badge bg-dark">{{prog.name}}</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-2"></div>
-        </div>
-        <div *ngIf="software">
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col px-4 py-2">Software knowledge</div>
-            </div>
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-7 d-flex flex-wrap flex-row bd-highlight mb-3">
-                    <div *ngFor="let soft of software">
-                        <div class="d-flex flex-row my-0">
-                            <div class="p-2 m-2 badge bg-dark">{{soft}}</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        </div>        
     </div>
 </div>

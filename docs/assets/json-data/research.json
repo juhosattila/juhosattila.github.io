@@ -1,7 +1,7 @@
 {
     "conferences": [
         {
-            "date": "2019. 03",
+            "date": "2019. 03.",
             "nameShort": "STACS 2019",
             "nameLong": "36th International Symposium on Theoretical Aspects of Computer Science",
             "country": "Germany",
@@ -30,24 +30,24 @@
     ],
     "research": [
         {
-            "dateFrom": "2019. 06",
-            "dateTo": "2021. 05",
+            "dateFrom": "2019. 06.",
+            "dateTo": "2021. 05.",
             "title": "Medical (CT) image reconstructions with distinguished interest in CNN-based regularisation and iterative techniques.",
             "supervisor": "Dániel Hadházi",
             "supervisorsInstitution": "BME, Department of Measurement and Information Systems",
             "supporter": "Ministry of Human Capacities under its New National Excellence Program (one year + half year)."
         },
         {
-            "dateFrom": "2018. 09",
-            "dateTo": "2019. 08",
+            "dateFrom": "2018. 09.",
+            "dateTo": "2019. 08.",
             "title": "The stable roommates problem with special interest in approximation algorithms for finding egalitarian stable roommates. The stable marriage problem with generalised preference structures.",
             "supervisor": "Dr. Ágnes Cseh",
             "supervisorsInstitution": "Hungarian Academy of Sciences, Centre for Economic and Regional Studies",
             "supporter": "Cooperation of Excellences Grant, by the Ministry of Human Capacities under its New National Excellence Program (one year)."
         },
         {
-            "dateFrom": "2017. 09",
-            "dateTo": "2017. 12",
+            "dateFrom": "2017. 09.",
+            "dateTo": "2017. 12.",
             "title": "Performance modelling and analysis of distributed P2P download systems.",
             "supervisor": "Dr. János Levendovszky",
             "supervisorsInstitution": "BME Department of Networked Systems and Services",
@@ -57,7 +57,7 @@
     "studentConferences": [
         {
             "conference": {
-                "date": "2021. 05",
+                "date": "2021. 05.",
                 "nameShort": "TDK",
                 "nameLong": "Scientific Conference for Students",
                 "country": "Hungary",
@@ -73,7 +73,7 @@
         },
         {
             "conference": {
-                "date": "2021. 03",
+                "date": "2021. 03.",
                 "nameShort": "OTDK",
                 "nameLong": "National Scientific Conference for Students",
                 "country": "Hungary",
@@ -89,7 +89,7 @@
         },
         {
             "conference": {
-                "date": "2020. 05",
+                "date": "2020. 05.",
                 "nameShort": "TDK",
                 "nameLong": "Scientific Conference for Students",
                 "country": "Hungary",
@@ -105,7 +105,7 @@
         },
         {
             "conference": {
-                "date": "2019. 04",
+                "date": "2019. 04.",
                 "nameShort": "OTDK",
                 "nameLong": "National Scientific Conference for Students",
                 "country": "Hungary",
@@ -121,7 +121,7 @@
         },
         {
             "conference": {
-                "date": "2018. 11",
+                "date": "2018. 11.",
                 "nameShort": "TDK",
                 "nameLong": "Scientific Conference for Students",
                 "country": "Hungary",
@@ -137,7 +137,7 @@
         },
         {
             "conference": {
-                "date": "2017. 11",
+                "date": "2017. 11.",
                 "nameShort": "TDK",
                 "nameLong": "Scientific Conference for Students",
                 "country": "Hungary",

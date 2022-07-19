@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container rounded h-100">
     <div *ngIf="!posts || posts.length == 0" class="row my-5 text-center text-primary">
         <h3>Sorry, no posts for now!</h3>
     </div>
@@ -7,7 +7,7 @@
             class="list-group-item list-group-item-action flex-column align-items-start">
             <div class="d-flex w-100 justify-content-between">
                 <p class="mb-1 display-6">{{post.title}}</p>
-                <p>{{post.date | date:"yyyy.MM.dd"}}</p>
+                <p>{{post.date | date:"yyyy.MM.dd."}}</p>
             </div>
             <div class="mb-1">{{post.description}}</div>
         </nav>

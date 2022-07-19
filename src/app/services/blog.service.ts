@@ -8,13 +8,34 @@ import blog from '../../assets/json-data/blog.json'
 })
 export class BlogService {
 
-  constructor() { }
-
+  private dynaPosts: Post[] = []
+  constructor() {
+    this.initPosts();
+  }
+  private initPosts(): void {
+    let posts: {
+      date,
+      title,
+      description,
+      content
+    }[] = blog.posts;
+    for (let i = 0; i < posts.length; i++) {
+      this.dynaPosts.push(
+        {
+          id: i + 1,
+          date: posts[i].date,
+          title: posts[i].title,
+          description: posts[i].description,
+          content: posts[i].content
+        }
+      );
+    }
+  }
   public getPosts(): Post[] {
-    return blog.posts;
+    return this.dynaPosts;
   }
   public getPostById(id: number): Observable<Post> | null {
-    let post = blog.posts.find(element => element.id == id)
+    let post = this.dynaPosts.find(element => element.id == id)
     return post ? of(post) : null;
   }
 }

@@ -1,25 +1,5 @@
 {
     "posts": [
-        {
-            "id": 1,
-            "date": "2021. 12. 13",
-            "title": "First post",
-            "description": "Test",
-            "content": "Some content here..."
-        },
-        {
-            "id": 2,
-            "date": "2022. 01. 10",
-            "title": "Second post",
-            "description": "Test",
-            "content": "Some content here..."
-        },
-        {
-            "id": 3,
-            "date": "2022. 02. 20",
-            "title": "Third post",
-            "description": "Test",
-            "content": "Some content here..."
-        }
+        
     ]
 }
