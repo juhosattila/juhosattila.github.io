@@ -6,6 +6,9 @@ The only files you have to modify are in the assets folder:
 
 ![assets folder](src/assets/images/docs/assets.png)
 
+Make sure to work on the _main_ branch, when modifying the files on GitHub.
+The branch _gh-pages_ is auto-updated.
+
 ## About site 
 
 To change any data or text on about page, modify **about.json**.
@@ -447,3 +450,9 @@ If you delete a post, remove it from the blog.json as well.
 If you want to withdraw a post, but not delete it entirely: 
 
 Remove the related _.json_ entry but not the post. This way the post won't be displayed, and you can republish it later by just adding the _blog.json_ entry again.
+
+## Finishing steps
+
+1. **Commit** your changes to the _main_ branch.
+2. _Don't_ modify the branch _gh-pages_. It's auto-updated.
+3. After 10-15 minutes you should see the changes on your website.
