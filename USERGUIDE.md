@@ -6,7 +6,7 @@ The only files you have to modify are in the assets folder:
 
 ![assets folder](src/assets/images/docs/assets.png)
 
-Make sure to work on the _main_ branch, when modifying the files on GitHub.
+Make sure to work on the **main** branch, when modifying the files on GitHub.
 The branch _gh-pages_ is auto-updated.
 
 ## About site 
