@@ -20,6 +20,7 @@ export class ResumeComponent implements OnInit {
   github: string
   linkedin: string
   scholar: string
+  twitter: string
   languages: Language[]
   programmingLanguages: ProgrammingLanguage[]
   technologies: string[]
@@ -33,6 +34,7 @@ export class ResumeComponent implements OnInit {
     this.github = this.aboutService.getGithub()
     this.linkedin = this.aboutService.getLinkedin()
     this.scholar = this.aboutService.getScholar()
+    this.twitter = this.aboutService.getTwitter()
 
     this.languages = this.resumeService.getLanguages()
     this.programmingLanguages = this.resumeService.getProgrammingLanguages()

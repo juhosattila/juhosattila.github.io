@@ -32,4 +32,7 @@ export class AboutService {
   public getScholar(): string {
     return about.scholar;
   }
+  public getTwitter(): string {
+    return about.twitter;
+  }
 }
