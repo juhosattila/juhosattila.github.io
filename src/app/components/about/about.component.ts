@@ -27,5 +27,4 @@ export class AboutComponent implements OnInit {
     this.github = this.aboutService.getGithub();
     this.linkedin = this.aboutService.getLinkedin();
   }
-
 }

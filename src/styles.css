@@ -4907,12 +4907,6 @@ fieldset:disabled .btn {
   background-color: rgba(var(--bs-bg-opacity)) !important;
 }
 
-.bg-masthead {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 75%, #000 100%), url("assets/images/wp_3.JPG");
-}
-
 .bg-body {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-body-rgb), var(--bs-bg-opacity)) !important;

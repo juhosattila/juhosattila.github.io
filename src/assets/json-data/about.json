@@ -1,11 +1,11 @@
 {
-    "location": "Baden-Württemberg, Germany",
-    "phone": "+36 30 332 16 86",
-    "email": "juhosattila6@gmail.com",
+    "location": "MPI Tübingen, AI Center",
+    "phone": "+12 3 456 789",
+    "email": "@tuebingen.mpg.de",
     "github": "https://github.com/juhosattila",
     "linkedin": "https://hu.linkedin.com/in/attila-juhos-1bb478165",
     "twitter": "https://twitter.com/JuhosAttila",
     "scholar": "https://scholar.google.com/citations?hl=en&user=35hg1Z8AAAAJ",
-    "introduction": "I am Attila Juhos currently a PHD student at University of Tübingen under the guidance of Dr. Wieland Brendel. Previously I obtained an MSc in computer science at Budapest University of Technology and Economics.",
+    "introduction": "I am Attila Juhos currently a PHD student at University of Tübingen under the guidance of Dr. Wieland Brendel. Previously I obtained an MSc degree in computer science at Budapest University of Technology and Economics.",
     "professionalInterests": "Professionally I am interested in theoretical aspects of machine learning, especially in image reconstruction problems."
 }
