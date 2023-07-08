@@ -9,8 +9,7 @@ import { AboutService } from 'src/app/services/about.service';
 
 @Component({
   selector: 'app-resume',
-  templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.css']
+  templateUrl: './resume.component.html'
 })
 export class ResumeComponent implements OnInit {
 

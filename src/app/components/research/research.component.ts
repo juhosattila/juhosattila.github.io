@@ -6,8 +6,7 @@ import { ResearchService } from 'src/app/services/research.service';
 
 @Component({
   selector: 'app-research',
-  templateUrl: './research.component.html',
-  styleUrls: ['./research.component.css']
+  templateUrl: './research.component.html'
 })
 export class ResearchComponent implements OnInit {
 

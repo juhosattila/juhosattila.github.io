@@ -4,8 +4,7 @@ import { BlogService } from 'src/app/services/blog.service';
 
 @Component({
   selector: 'app-posts',
-  templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.css']
+  templateUrl: './posts.component.html'
 })
 export class PostsComponent implements OnInit {
 
