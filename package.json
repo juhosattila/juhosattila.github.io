@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "compress": "ts-node brotli_compress.mjs",
+    "build_and_compress": "npm run build && npm run compress"
   },
   "private": true,
   "dependencies": {

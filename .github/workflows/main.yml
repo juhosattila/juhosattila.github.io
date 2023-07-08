@@ -19,8 +19,8 @@ jobs:
     - name: Install dependencies
       run: npm ci
     
-    - name: Build
-      run: npm run build
+    - name: Build & Brotli compress
+      run: npm run build_and_compress 
       
     - name: Deploy to GitHub Pages
       uses: crazy-max/ghaction-github-pages@v3
