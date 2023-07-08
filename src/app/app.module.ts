@@ -9,7 +9,6 @@ import { AboutComponent } from './components/about/about.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { PostDetailsComponent } from './components/post-details/post-details.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ResearchComponent } from './components/research/research.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
@@ -26,7 +25,6 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
     HttpClientModule,
     MarkdownModule.forRoot({ loader: HttpClient })
   ],
