@@ -6,8 +6,8 @@
         <div class="row list-group justify-content-center">
             <div *ngFor="let pub of publications" class="align-items-center">
                 <div class="d-flex justify-content-between my-0">
-                    <div class="col-2"></div>
-                    <div class="col-1">
+                    <div class="col-1 col-md-2"></div>
+                    <div class="col-2 col-md-1">
                         {{pub.date}}
                     </div>
                     <div class="col-7">
@@ -128,7 +128,7 @@
             </div>
         </div>
     </div>
-    <div *ngIf="studentConferences" class="my-5 mx-5 justify-content-center">
+    <div *ngIf="studentConferences" class="my-5 mx-md-5 justify-content-center">
         <div class="display-6 my-5 text-center">Student conferences</div>
         <div class="row pb-3">            
             <div class="card-group">
@@ -163,10 +163,10 @@
                             <div *ngIf="conf.conference.webpage || conf.conference.paperLink"
                                 class="card-footer d-flex justify-content-between">
                                 <a *ngIf="conf.conference.webpage" href="{{conf.conference.webpage}}"
-                                    class="card-link text-secondary">Conference webpage</a>
+                                    class="card-link text-secondary text-start">Conference webpage</a>
                                 <span *ngIf="!conf.conference.webpage"></span>
                                 <a *ngIf="conf.conference.paperLink" href="{{conf.conference.paperLink}}"
-                                    class="card-link text-secondary">Read paper</a>
+                                    class="card-link text-secondary text-end">Read paper</a>
                             </div>
                         </div>
                     </div>

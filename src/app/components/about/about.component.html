@@ -8,18 +8,20 @@
                 <p class="card-text text-primary">{{researchText}}</p>
                 <p class="card-text text-primary">Please feel free to contact me!</p>
             </div>
-            <ul class="list-group list-group-flush col-12 col-md-5 my-md-4 border rounded bg-light shadow mb-3">
-                <div class="text-center text-secondary m-3 display-6 fs-3">Contact</div>
+            <ul class="list-group list-group-flush col-12 col-md-5 my-md-4 border rounded bg-light shadow mb-3 p-2">
+                <li class="list-group-item bg-light border-0 text-center text-secondary display-6 fs-3 pb-3">Contact</li>
                 <li class="list-group-item text-secondary mx-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-envelope mx-3" viewBox="0 0 16 16">
                         <path
                             d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
                     </svg>
-                    <<button data-toggle="tooltip" data-placement="top" title="Attila"
-                        class="text-muted fst-italic bg-light border-0 p-0">first name</button>>.<<button
-                            data-toggle="tooltip" data-placement="top" title="Juhos"
-                            class="text-muted fst-italic bg-light border-0 p-0">last name</button>>{{email}}
+                    <span class="m-0 p-0">
+                        <<button data-toggle="tooltip" data-placement="top" title="Attila"
+                            class="text-muted fst-italic bg-light border-0 p-0">first name</button>></span>.<span><<button data-toggle="tooltip" data-placement="top" title="Juhos"
+                            class="text-muted fst-italic bg-light border-0 p-0">last name</button>>
+                    </span>
+                    {{email}}
                 </li>
                 <li class="list-group-item text-secondary mx-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
