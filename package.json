@@ -5,11 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build_prod": "ng build --configuration production",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "compress": "ts-node brotli_compress.mjs",
-    "build_and_compress": "npm run build && npm run compress"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
