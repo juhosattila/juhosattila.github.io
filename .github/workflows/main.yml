@@ -19,7 +19,7 @@ jobs:
     - name: Install dependencies
       run: npm ci
     
-    - name: Build for Production
+    - name: Build & basic compress
       run: npm run build_prod
       
     - name: Deploy to GitHub Pages

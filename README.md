@@ -166,7 +166,7 @@ To modify any data on page Résumé, change **resume.json**.
    ```
    - **Attribute descriptions and restrictions**
       -  __name__: Name of the programming language or technology, no format restrictions.
-      -  __level__: Currently two value is suppoted: _intermediate_ and _advanced_. Any other value won't be displayed!
+      -  __level__: Currently two value is supported: _intermediate_ and _advanced_. Any other value won't be displayed!
     ----
 - **Software** is a simple string array without any restrictions. Just add the software you are familiar with:
     ```json
@@ -233,7 +233,7 @@ To upload a new version of your downloadable CV, take the following steps:
 
 1. Navigate to _src/assets/pdf_ folder
 2. Make sure, that your new CV is saved as a pdf.
-3. Rename your new CV to **`cv.pdf`** (small fonts).
+3. Rename your new CV to **`cv.pdf`** (lowercase).
 4. Drag and drop it to the folder to overwrite the previous cv.
 5. If at the end of these steps there is more than one version of your CV, something went wrong! Make sure your CV has the name and extension **`cv.pdf`**.
 6. Now your new CV can be downloaded.
@@ -455,4 +455,4 @@ Remove the related _.json_ entry but not the post. This way the post won't be di
 
 1. **Commit** your changes to the _main_ branch.
 2. _Don't_ modify the branch _gh-pages_. It's auto-updated.
-3. After 10-15 minutes you should see the changes on your website.
+3. After no more than 10 minutes you should see the changes on your website.
