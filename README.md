@@ -31,7 +31,7 @@ To change any data or text on about page, modify **about.json**.
     } 
    ```
 4. Modify the content you would like to change
-5. Make sure not to modify the structure: i.e. the left side of the colon should stay the same.
+5. Make sure not to modify the structure: i.e. the left side of the column should stay the same.
 6. Save the file
 
 ## Résumé site
@@ -384,7 +384,7 @@ The data on the website will appear in the same order as it is in the _.json_ fi
        - __supervisor__: Project supervisor, can be empty.
        - __result__: Conference results, no format restrictions.
 
-5. Make sure not to modify the structure: i.e. the left side of the colon should stay the same.
+5. Make sure not to modify the structure: i.e. the left side of the column should stay the same.
 6. Save the file
 
 ## Add or remove blogposts
