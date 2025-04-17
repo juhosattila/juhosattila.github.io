@@ -1,8 +1,7 @@
-<div class="container">
-    <div class="display-4 mt-5 text-center">Research</div>
-    <hr>
+<div id="research" class="container">
+    <div class="mt-5 text-center zain-title text-white bg-green rounded">Research</div>
     <div *ngIf="publications" class="my-5">
-        <div class="display-6 my-5 text-center">Publications</div>
+        <div class="display-6 my-5 text-center zain-font">Publications</div>
         <div class="row list-group justify-content-center">
             <div *ngFor="let pub of publications" class="align-items-center">
                 <div class="d-flex justify-content-between my-0">
@@ -45,7 +44,7 @@
         </div>
     </div>
     <div *ngIf="research" class="my-5">
-        <div class="display-6 my-5 text-center">Projects</div>
+        <div class="display-6 my-5 text-center zain-font">Projects</div>
         <div class="row list-group justify-content-center">
             <div *ngFor="let res of research" class="align-items-center">
                 <div class="d-flex justify-content-between my-0">
@@ -88,7 +87,7 @@
         </div>
     </div>
     <div *ngIf="conferences" class="my-5 justify-content-center">
-        <div class="display-6 my-5 text-center">Conferences</div>
+        <div class="display-6 my-5 text-center zain-font">Conferences</div>
         <div *ngFor="let conf of conferences" class="row">
             <div class="col-lg-3">
             </div>
@@ -129,7 +128,7 @@
         </div>
     </div>
     <div *ngIf="studentConferences" class="my-5 mx-md-5 justify-content-center">
-        <div class="display-6 my-5 text-center">Student conferences</div>
+        <div class="display-6 my-5 text-center zain-font">Student conferences</div>
         <div class="row pb-3">            
             <div class="card-group">
                 <div class="col-lg-6 mb-4" *ngFor="let conf of studentConferences">

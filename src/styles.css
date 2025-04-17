@@ -12,8 +12,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-primary: #64a19d;
+  --bs-green: #64a19d;
+  --bs-primary: #646464;  
   --bs-secondary: #01606b;
+  --bs-gray: #212529;
   --bs-success: #67c29c;
   --bs-info: #1cabc4;
   --bs-warning: #e4c662;
@@ -22,6 +24,7 @@
   --bs-dark: #212529;
   --bs-black: #000;
   --bs-white: #fff;
+  --bs-green-rgb: 100, 161, 157;
   --bs-primary-rgb: 100, 100, 100;
   --bs-secondary-rgb: 7, 53, 85;
   --bs-success-rgb: 103, 194, 156;
@@ -4815,9 +4818,19 @@ fieldset:disabled .btn {
   text-transform: uppercase !important;
 }
 
+.text-primary {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-secondary {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-green {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-green-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-light {
@@ -4852,14 +4865,18 @@ fieldset:disabled .btn {
 
 .bg-primary {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
-  /* background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 75%) */
+  background-color: var(--bs-primary) !important;
 }
 
 .bg-secondary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 75%)
+}
+
+.bg-green {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-green-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-success {
@@ -8495,4 +8512,74 @@ body {
 .markdown-clipboard-button.copied {
   background-color: rgba(0, 255, 0, 0.1);
   color: #00ff00;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Zain";
+  src: url("assets/fonts/Zain-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+} 
+
+.zain-font {
+  font-family: "Zain", sans-serif;
+  font-size: 2.5rem;
+}
+
+.zain-title  {
+  font-family: "Zain", sans-serif;
+  font-size: 4rem;
+}
+
+.sidebar-item-underline {
+  border-bottom: 0.25rem solid transparent;
+  transform:translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+.sidebar-item-underline:active, .sidebar-item-underline:hover {
+  transform: translateY(-0.2rem);
+  border-bottom: 0.25rem solid var(--bs-green);
+}
+.button-hover-anim {
+  transform:translateY(-0.2rem);
+  transition: all 0.3s ease-in-out;
+} 
+.button-hover-anim:hover {
+  transform: translateY(0.2rem);
+}
+.contact{
+  transform: translateX(0) scale(1);
+  transition: all 0.5s ease-in-out;
+}
+.contact:hover{
+  transform: translateX(-5%) scale(1.05);
+}
+.icon-hover {
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
+}
+.icon-hover:hover {
+  transform: translateY(-15%);
+}
+.up-button{
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  border-radius: 50%;
+  padding: 1rem;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+}
+.up-button:hover{
+  background-color: #467370;
+  transform: translateY(-0.4rem);
+}
+.up-button.visible{
+  opacity: 1;
+}
+.up-button.hidden{
+  opacity: 0;
 }

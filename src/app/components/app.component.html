@@ -1,8 +1,43 @@
 <div class="px-0">
-    <nav class="sticky-top navbar navbar-expand-md navbar-light fixed-left w-20 align-items-xl-center" id="sidebar">
-        <app-sidebar></app-sidebar>
-    </nav>
-    <div class="mt-4">
-        <router-outlet></router-outlet>
-    </div>
+  <nav
+    class="sticky-top navbar navbar-expand-md navbar-light fixed-left w-20 align-items-xl-center"
+    id="sidebar"
+  >
+    <app-sidebar></app-sidebar>
+  </nav>
+  <div class="mt-4">
+    <app-about></app-about>
+    <app-news></app-news>
+    <app-resume></app-resume>
+    <app-research></app-research>
+    <!-- <router-outlet></router-outlet> -->
+
+    <hr class="my-1" />
+    <footer class="small bg-light text-muted fst-italic rounded text-center">
+      <div class="mb-1">Last update: Apr 2025</div>
+    </footer>
+  </div>
+  <div
+    [ngClass]="{
+      visible: scrollUpButtonVisible,
+      hidden: !scrollUpButtonVisible
+    }"
+    class="btn btn-primary up-button"
+  >
+    <a href="#about">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="#FFFFFF"
+        class="bi bi-arrow-up"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"
+        />
+      </svg>
+    </a>
+  </div>
 </div>

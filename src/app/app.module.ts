@@ -11,6 +11,7 @@ import { PostsComponent } from './components/posts/posts.component';
 import { PostDetailsComponent } from './components/post-details/post-details.component';
 import { ResearchComponent } from './components/research/research.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { NewsComponent } from './components/news/news.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     ResumeComponent,
     PostsComponent,
     PostDetailsComponent,
-    ResearchComponent
+    ResearchComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
