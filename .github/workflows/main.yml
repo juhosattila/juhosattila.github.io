@@ -28,4 +28,4 @@ jobs:
         target_branch: gh-pages
         build_dir: dist/juhosattila.github.io
       env:
-        GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        GH_TOKEN: ${{ secrets.ACCESS_TOKEN }}
