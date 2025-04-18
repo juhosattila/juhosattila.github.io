@@ -8569,8 +8569,11 @@ body {
   transform: translateY(0);
   transition: all 0.3s ease-in-out;
 }
-.sidebar-item-underline:active,
 .sidebar-item-underline:hover {
+  transform: translateY(-0.2rem);
+  border-bottom: 0.25rem solid var(--bs-white);
+}
+.sidebar-item-underline.active {
   transform: translateY(-0.2rem);
   border-bottom: 0.25rem solid var(--bs-white);
 }
@@ -8601,7 +8604,7 @@ body {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  z-index: 1000;
+  z-index: 1000;  
   border-radius: 50%;
   padding: 1rem;
   transform: translateY(0);

@@ -1,15 +1,15 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container px-4 px-lg-5">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler navbar-toggler-right border-secondary" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav zain-title">
-                <li class="nav-item sidebar-item-underline"><a class="nav-link display-6" href="#about">About</a></li>
-                <li class="nav-item sidebar-item-underline"><a class="nav-link display-6" href="#resume">Résumé</a></li>                
-                <li class="nav-item sidebar-item-underline"><a class="nav-link display-6" href="#research">Research</a></li>
+                <li class="nav-item sidebar-item-underline" [class.active]="appComponent.isActive('about')"><a class="nav-link display-6"  href="#about">About</a></li>
+                <li class="nav-item sidebar-item-underline" [class.active]="appComponent.isActive('resume')"><a class="nav-link display-6" href="#resume">Résumé</a></li>                
+                <li class="nav-item sidebar-item-underline" [class.active]="appComponent.isActive('research')"><a class="nav-link display-6" href="#research">Research</a></li>
 
                 <!-- <li class="nav-item sidebar-item-underline"><a class="nav-link display-6" [routerLink]="'/about'">About</a></li>
                 <li class="nav-item sidebar-item-underline"><a class="nav-link display-6" [routerLink]="'/resume'">Résumé</a></li>                

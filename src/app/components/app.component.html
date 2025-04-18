@@ -5,11 +5,10 @@
   >
     <app-sidebar></app-sidebar>
   </nav>
-  <div class="mt-4">
-    <app-about></app-about>
-    <app-news></app-news>
-    <app-resume></app-resume>
-    <app-research></app-research>
+  <div class="mt-4" [@fadeinAnimation]>
+    <app-about id="about"></app-about>
+    <app-resume id="resume"></app-resume>
+    <app-research id="research"></app-research>
     <!-- <router-outlet></router-outlet> -->
 
     <hr class="my-1" />
@@ -17,14 +16,15 @@
       <div class="mb-1">Last update: Apr 2025</div>
     </footer>
   </div>
-  <div
-    [ngClass]="{
-      visible: scrollUpButtonVisible,
-      hidden: !scrollUpButtonVisible
-    }"    class=""
-  >
+  <div>
     <a href="#about">
-      <div class="btn btn-primary up-button">
+      <div
+        [ngClass]="{
+          visible: scrollUpButtonVisible,
+          hidden: !scrollUpButtonVisible
+        }"
+        class="btn btn-primary up-button"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"

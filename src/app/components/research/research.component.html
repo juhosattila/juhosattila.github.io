@@ -11,8 +11,8 @@
                     </div>
                     <div class="col-7">
                         <div>
-                            <a *ngIf="pub.paperLink" href="{{pub.paperLink}}">{{pub.title | uppercase}}</a>
-                            <a *ngIf="!pub.paperLink">{{pub.title | uppercase}}</a>
+                            <a *ngIf="pub.paperLink" href="{{pub.paperLink}}">{{pub.title }}</a>
+                            <a *ngIf="!pub.paperLink">{{pub.title }}</a>
                         </div>
                         <div *ngIf="pub.authors.length!=0" class="my-2">
                             <div class="text-muted">
@@ -54,7 +54,7 @@
                     </div>
                     <div class="col-7">
                         <div>
-                            {{res.title | uppercase}}
+                            {{res.title }}
                         </div>
                         <div *ngIf="res.supervisor" class="my-2">
                             <div class="text-muted">
@@ -88,7 +88,46 @@
     </div>
     <div *ngIf="conferences" class="my-5 justify-content-center">
         <div class="display-6 my-5 text-center zain-font">Conferences</div>
+
         <div *ngFor="let conf of conferences" class="row">
+            <div class="col mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="text-secondary d-flex justify-content-start align-items-center">
+                            <h3>{{conf.nameShort}}<span class="text-green"> | </span></h3>
+                            <h4> {{conf.nameLong}}</h4>
+                        </div>
+                        
+                        <div class="card-body text-center">
+                            <h2 class="card-text">{{conf.paperTitle}}</h2>
+                        </div>
+                        <div *ngIf="!conf.authors.length==0" class="card-body text-secondary pt-0">
+                            <h6 class="text-center mb-0">by</h6>
+                            <div class="d-flex justify-content-center">
+                                <div *ngFor="let auth of conf.authors">
+                                    <h6 class="mx-2">{{auth}}</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body text-secondary d-flex justify-content-between">
+                            <h6 *ngIf="conf.city && conf.country">{{conf.institution}} ({{conf.city}}, {{conf.country}})
+                            </h6>
+                            <h6 *ngIf="!(conf.city && conf.country)">{{conf.institution}} <span
+                                    *ngIf="conf.city || conf.country">({{conf.city}}{{conf.country}})</span></h6>
+                            <h6>
+                                <span>{{conf.date}}</span>
+                            </h6>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <a *ngIf="conf.webpage" href="{{conf.webpage}}" class="card-link text-start">Conference webpage</a>
+                            <a *ngIf="conf.paperLink" href="{{conf.paperLink}}" class="card-link text-end">Read paper</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div *ngFor="let conf of conferences" class="row">
             <div class="col-lg-3">
             </div>
             <div class="col-lg-6 mb-4">
@@ -125,7 +164,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
     <div *ngIf="studentConferences" class="my-5 mx-md-5 justify-content-center">
         <div class="display-6 my-5 text-center zain-font">Student conferences</div>
@@ -152,7 +191,7 @@
                                     </h6>
                                 </div>
                                 <div class="m-4">
-                                    <h5 class="card-text">{{conf.conference.paperTitle | uppercase}}</h5>
+                                    <h5 class="card-text">{{conf.conference.paperTitle }}</h5>
                                 </div>
                                 <div>
                                     <h5>{{conf.result}}</h5>
