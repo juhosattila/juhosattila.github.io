@@ -13,7 +13,7 @@ import { AboutService } from 'src/app/services/about.service';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor(private resumeService: ResumeService, private aboutService: AboutService) { }
+  constructor(private resumeService: ResumeService) { }
 
   cv: string = "assets/pdf/cv.pdf"
   github: string
@@ -30,11 +30,6 @@ export class ResumeComponent implements OnInit {
   jobs: Job[]
 
   ngOnInit(): void {
-    this.github = this.aboutService.getGithub()
-    this.linkedin = this.aboutService.getLinkedin()
-    this.scholar = this.aboutService.getScholar()
-    this.twitter = this.aboutService.getTwitter()
-
     this.languages = this.resumeService.getLanguages()
     this.programmingLanguages = this.resumeService.getProgrammingLanguages()
     this.software = this.resumeService.getSoftware()

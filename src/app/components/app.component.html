@@ -6,15 +6,25 @@
     <app-sidebar></app-sidebar>
   </nav>
   <div class="mt-4" [@fadeinAnimation]>
-    <app-about id="about"></app-about>
-    <app-resume id="resume"></app-resume>
-    <app-research id="research"></app-research>
-    <!-- <router-outlet></router-outlet> -->
-
-    <hr class="my-1" />
-    <footer class="small bg-light text-muted fst-italic rounded text-center">
-      <div class="mb-1">Last update: Apr 2025</div>
-    </footer>
+    <div class="bg-white">
+      <app-about id="about"></app-about>
+      <app-resume id="resume"></app-resume>
+    </div>
+    <div class="image-window"></div>
+    <div class="card mx-2 border-0 fixed-image">
+      <img
+        class="rounded"
+        src="assets/images/bg.jpg"
+        alt="Background"
+      />
+    </div>
+    <div class="bg-white pt-2">
+      <app-research id="research"></app-research>
+      <hr class="my-1" />
+      <footer class="small bg-light text-muted fst-italic rounded text-center">
+        <div class="mb-1">Last update: Apr 2025</div>
+      </footer>
+    </div>
   </div>
   <div>
     <a href="#about">
