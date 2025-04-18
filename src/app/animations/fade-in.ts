@@ -7,7 +7,7 @@ export const fadeinAnimation = trigger('fadeinAnimation', [
         transform: 'translateY(-2%)',
       }),
       animate(
-        '400ms ease-in',
+        '500ms ease-in',
         style({
           opacity: 1,
           transform: 'translateY(0)',
