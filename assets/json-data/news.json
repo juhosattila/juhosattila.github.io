@@ -1,0 +1,16 @@
+{
+    "news": [
+        {
+            "date": "2023-10-01",
+            "content": "A powerful earthquake measuring 7.8 on the Richter scale struck the city early this morning, causing widespread damage and panic among residents."
+        },
+        {
+            "date": "2023-09-30",
+            "content": "In an exciting final match, the local sports team clinched the championship title, bringing joy to fans across the city."
+        },
+        {
+            "date": "2023-09-29",
+            "content": "The city has officially opened a new park in the downtown area, featuring walking trails, playgrounds, and picnic spots for families."
+        }
+    ]
+}
