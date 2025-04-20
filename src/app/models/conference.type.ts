@@ -8,7 +8,7 @@ export interface Conference {
     paperTitle: string,
     webpage: string,
     paperLink: string,
-    authors: string[]
+    authors: string
 }
 
 export interface StudentConference {

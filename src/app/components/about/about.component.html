@@ -1,15 +1,31 @@
 <div id="about" class="container pt-4 h-100">
-  <div
-    class="card mx-2 border-0 rounded-2 bg-light border rounded-3"
-  >
-    <div class="row my-4 align-items-center">
-      <div class="col-1"></div>
-      <div
-        class="card-body col-12 col-md-4 p-4 text-secondary h-100 rounded-3"
-      >
+  <div class="card mx-2 border-0 rounded-2 bg-light border rounded-3">
+    <div
+      class="row my-4 align-items-center d-flex flex-column-reverse flex-md-row"
+    >
+      <div class="col-lg-1"></div>
+      <div class="card-body col-12 col-md-4 p-4 text-secondary h-100 rounded-3">
         <p>{{ aboutText }}</p>
         <p>{{ researchText }}</p>
         <p>Please feel free to contact me!</p>
+        <div class="mt-5 text-start border-bottom pb-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="currentColor"
+            class="bi bi-geo-alt me-3"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"
+            />
+            <path
+              d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+            />
+          </svg>
+          {{ location }}
+        </div>
       </div>
       <div class="col-12 col-md-6 mt-4 mt-md-0 pe-lg-0 rounded-3">
         <div class="my-md-3">
@@ -22,8 +38,133 @@
                 alt="profile"
               />
             </div>
-            <div class="mt-5 text-center d-flex justify-content-center">
-              <div class="icon-hover bg-blur rounded-pill">
+            <div
+              class="m-3 d-flex justify-content-center"
+            >             
+              <div
+                class="p-3 text-center d-flex justify-content-center fit-content"
+              >
+                <div class="icon-hover rounded-pill">
+                  <a href="{{ github }}" class="m-2 bg">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      fill="currentColor"
+                      class="bi bi-github"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="icon-hover rounded-pill">
+                  <a href="{{ twitter }}" class="m-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      fill="currentColor"
+                      class="bi bi-twitter-x"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="icon-hover">
+                  <a href="{{ linkedin }}" class="m-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      fill="currentColor"
+                      class="bi bi-linkedin"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div class="icon-hover">
+                  <a href="{{ scholar }}" class="m-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      fill="currentColor"
+                      class="bi bi-mortarboard-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"
+                      />
+                      <path
+                        d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <div
+                  class="icon-hover"
+                  (click)="copyEmail()"
+                  style="cursor: copy"
+                >
+                  <a
+                    *ngIf="!emailCopied"
+                    class="m-2"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Copy: {{ fullEmail }}"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      fill="currentColor"
+                      class="bi bi-envelope"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    *ngIf="emailCopied"
+                    class="m-2"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Copied: {{ fullEmail }}"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="48"
+                      height="48"
+                      fill="currentColor"
+                      class="bi bi-envelope-check"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"
+                      />
+                      <path
+                        d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="mt-md-5 mt-3 text-center d-flex justify-content-center">
+              <div class="icon-hover rounded-pill">
                 <a href="{{ github }}" class="m-2 bg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -39,23 +180,23 @@
                   </svg>
                 </a>
               </div>
-              <div class="icon-hover bg-blur rounded-pill">
+              <div class="icon-hover rounded-pill">
                 <a href="{{ twitter }}" class="m-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="48"
                     height="48"
                     fill="currentColor"
-                    class="bi bi-twitter"
+                    class="bi bi-twitter-x"
                     viewBox="0 0 16 16"
                   >
                     <path
-                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                      d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
                     />
                   </svg>
                 </a>
               </div>
-              <div class="icon-hover bg-blur">
+              <div class="icon-hover">
                 <a href="{{ linkedin }}" class="m-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +212,7 @@
                   </svg>
                 </a>
               </div>
-              <div class="icon-hover bg-blur">
+              <div class="icon-hover">
                 <a href="{{ scholar }}" class="m-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -90,88 +231,69 @@
                   </svg>
                 </a>
               </div>
-            </div>
+              <div
+                class="icon-hover"
+                (click)="copyEmail()"
+                style="cursor: copy"
+              >
+                <a
+                  *ngIf="!emailCopied"
+                  class="m-2"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Copy: {{ fullEmail }}"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    fill="currentColor"
+                    class="bi bi-envelope"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  *ngIf="emailCopied"
+                  class="m-2"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Copied: {{ fullEmail }}"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    fill="currentColor"
+                    class="bi bi-envelope-check"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z"
+                    />
+                    <path
+                      d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
     </div>
     <div class="d-flex justify-content-center mb-4">
-      <div
-        class="bg-blur rounded-pill border border-green border-4 p-3"
+      <!-- <div
+        class="rounded-pill border border-green border-4 p-3"
         style="width: fit-content"
       >
-        <div class="text-secondary">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            fill="currentColor"
-            class="bi bi-envelope mx-3"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
-            />
-          </svg>
-          <span class="m-0 p-0">
-            <<button
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Attila"
-              class="text-muted fst-italic bg-light border-0 p-0"
-            >
-              first name</button
-            >></span
-          >.<span
-            ><<button
-              data-toggle="tooltip"
-              data-placement="top"
-              title="Juhos"
-              class="text-muted fst-italic bg-light border-0 p-0"
-            >
-              last name</button
-            >>
-          </span>
-          {{ email }}
-          <span (click)="copyEmail()" class="text-decoration-none">
-            <svg
-              *ngIf="!emailCopied"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              class="bi bi-clipboard mx-2 icon-scale"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"
-              />
-              <path
-                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"
-              />
-            </svg>
-            <svg
-              *ngIf="emailCopied"
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              class="bi-clipboard-check mx-2 icon-scale text-success"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"
-              />
-              <path
-                d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"
-              />
-              <path
-                d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"
-              />
-            </svg>
-          </span>
-        </div>
+
+
+
+
         <div class="text-secondary mt-2 text-start">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -190,7 +312,7 @@
           </svg>
           {{ location }}
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </div>

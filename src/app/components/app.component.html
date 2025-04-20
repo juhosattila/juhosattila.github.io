@@ -1,24 +1,27 @@
-<div class="px-0">
+<div class="container-fluid px-0">
   <nav
-    class="sticky-top navbar navbar-expand-md navbar-light fixed-left w-20 align-items-xl-center"
+    class="sticky-top navbar navbar-expand-md navbar-light fixed-left align-items-xl-center"
     id="sidebar"
   >
     <app-sidebar></app-sidebar>
   </nav>
   <div class="mt-4" [@fadeinAnimation]>
-    <div class="bg-white">
+    <div class="bg-white py-5 rounded-2">
       <app-about id="about"></app-about>
+    </div>
+    <div class="image-window"></div>
+    <div class="bg-white py-3 rounded-2">
       <app-resume id="resume"></app-resume>
     </div>
     <div class="image-window"></div>
-    <div class="card mx-2 border-0 fixed-image">
+    <div class="card border-0 fixed-image">
       <img
-        class="rounded"
         src="assets/images/bg.jpg"
+        class="img-fluid rounded-3"
         alt="Background"
       />
     </div>
-    <div class="bg-white pt-2">
+    <div class="bg-white py-3 rounded-2">
       <app-research id="research"></app-research>
       <hr class="my-1" />
       <footer class="small bg-light text-muted fst-italic rounded text-center">

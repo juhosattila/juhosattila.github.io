@@ -1,10 +1,10 @@
 <div *ngIf="news" class="container mt-4 mb-2 news">
     <div class="mx-1 border-bottom bg-light rounded text-secondary">
-        <div class="text-start zain-font ps-4 mb-2 border-bottom">News</div>
+        <div class="text-start ps-4 mb-2 border-bottom fs-2 text-center">News</div>
         <div class="row list-group justify-content-center">
             <div *ngFor="let news of news" class="align-items-center pb-2">
                 <div class="d-flex justify-content-between my-0">
-                    <div class="col-lg-1 col-md-2 mx-3 text-center">
+                    <div class="col-lg-2 col-md-2 mx-3 text-center">
                         {{news.date}}
                     </div>
                     <div class="col">

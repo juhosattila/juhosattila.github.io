@@ -15,7 +15,9 @@ export class AboutComponent implements OnInit {
   linkedin: string;
   scholar: string;
   twitter: string;
+  fullEmail: string;
   emailCopied: boolean = false;
+  
 
   constructor(private aboutService: AboutService) {}
 
@@ -32,11 +34,17 @@ export class AboutComponent implements OnInit {
     this.phone = this.aboutService.getPhone();
     this.github = this.aboutService.getGithub();
     this.linkedin = this.aboutService.getLinkedin();
+
+    this.fullEmail = this.email;
+    this.fullEmail = this.fullEmail.replace(/@/g, " at ").replace(/\./g, " dot ");
   }
 
   public copyEmail() {
-    navigator.clipboard.writeText("attilajuhos"+this.email).then(() => {
+    navigator.clipboard.writeText(this.fullEmail).then(() => {
       this.emailCopied = true;
+      setTimeout(() => {
+        this.emailCopied = false;
+      }, 4000);
     }).catch(err => {
       console.error('Could not copy email');
       this.emailCopied = false;

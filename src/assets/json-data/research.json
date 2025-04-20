@@ -10,21 +10,17 @@
             "paperTitle": "Pairwise preferences in the stable marriage problem",
             "webpage": "https://stacs2019.akt.tu-berlin.de",
             "paperLink": "https://dl.acm.org/doi/fullHtml/10.1145/3434427",
-            "authors": [
-                "Ágnes Cseh & Attila Juhos"
-            ]
+            "authors": "Ágnes Cseh & Attila Juhos"
         }
     ],
     "publications": [
         {
             "date": 2021,
             "title": "Pairwise preferences in the stable marriage problem",
-            "journal": "ACM Transactions on Economics and Computation (TEAC)",
-            "authors": [
-                "Ágnes Cseh",
-                "Attila Juhos"
-            ],
-            "paperLink": "https://dl.acm.org/doi/10.1145/3434427"
+            "venue": "ACM Transactions on Economics and Computation (TEAC)",
+            "authors": "Ágnes Cseh, Attila Juhos",
+            "arxivLink": "https://arxiv.org/abs/1810.00392",
+            "website": "https://brendel-group.github.io/AnInfoNCE/"
         }
     ],
     "research": [
@@ -65,7 +61,7 @@
                 "paperTitle": "CNN-based iterative regularisation for CT image reconstructions.",
                 "webpage": "http://tda.inf.elte.hu/index.php?option=com_tdk&view=results",
                 "paperLink": "",
-                "authors": []
+                "authors": ""
             },
             "supervisor": "Dániel Hadházi",
             "result": "Second prize"
@@ -81,7 +77,7 @@
                 "paperTitle": "Neural network-aided tomographic reconstructions.",
                 "webpage": "",
                 "paperLink": "",
-                "authors": []
+                "authors": ""
             },
             "supervisor": "Dániel Hadházi",
             "result": "Special prize"
@@ -97,7 +93,7 @@
                 "paperTitle": "Neural network-aided tomographic reconstructions.",
                 "webpage": "",
                 "paperLink": "",
-                "authors": []
+                "authors": ""
             },
             "supervisor": "Dániel Hadházi (BME Department of Measurement and Information Systems)",
             "result": "Second prize"
@@ -113,7 +109,7 @@
                 "paperTitle": "Egalitarian solutions in the stable roommates problem.",
                 "webpage": "",
                 "paperLink": "https://tdk.bme.hu/VIK/DownloadPaper/Egalitarianus-stabil-parositasok-a-stabil",
-                "authors": []
+                "authors": ""
             },
             "supervisor": "Dr. Ágnes Cseh (Hungarian Academy of Sciences, Centre for Economic and Regional Studies), Dr. Tamás Fleiner (BME Department of Computer Science and Information Theory)",
             "result": "Second prize"
@@ -129,7 +125,7 @@
                 "paperTitle": "Egalitarian solutions in the stable roommates problem.",
                 "webpage": "https://tdk.bme.hu/VIK/Szimu1/Egalitarianus-stabil-parositasok-a-stabil",
                 "paperLink": "https://tdk.bme.hu/VIK/DownloadPaper/Egalitarianus-stabil-parositasok-a-stabil",
-                "authors": []
+                "authors": ""
             },
             "supervisor": "Dr. Ágnes Cseh, Dr. Tamás Fleiner",
             "result": "First prize"
@@ -145,7 +141,7 @@
                 "paperTitle": "Performance modelling and analysis of distributed P2P download systems.",
                 "webpage": "https://tdk.bme.hu/VIK/Halozatok2/2131",
                 "paperLink": "https://tdk.bme.hu/VIK/DownloadPaper/2131",
-                "authors": []
+                "authors": ""
             },
             "supervisor": "Dr. János Levendovszky (BME Department of Networked Systems and Services)",
             "result": "Third prize"
