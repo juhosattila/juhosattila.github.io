@@ -14,11 +14,13 @@
       <app-resume id="resume"></app-resume>
     </div>
     <div class="image-window"></div>
-    <div class="card border-0 fixed-image">
+    <div class="card border-0">
+      <!-- keep oncontextmenu=false on, otherwise it overrides site contextmenu -->
       <img
-        src="assets/images/bg.jpg"
-        class="img-fluid rounded-3"
+        src="{{imgSrc}}"
+        class="img-fluid rounded-3 fixed-image"
         alt="Background"
+        oncontextmenu="return false;"
       />
     </div>
     <div class="bg-white py-3 rounded-2">

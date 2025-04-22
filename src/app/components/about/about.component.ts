@@ -40,7 +40,7 @@ export class AboutComponent implements OnInit {
   }
 
   public copyEmail() {
-    navigator.clipboard.writeText(this.fullEmail).then(() => {
+    navigator.clipboard.writeText(this.email).then(() => {
       this.emailCopied = true;
       setTimeout(() => {
         this.emailCopied = false;
