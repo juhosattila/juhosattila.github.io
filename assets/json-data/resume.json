@@ -1,0 +1,203 @@
+{
+    "competitions": [
+        {
+            "name": "BME Mathematics Competition",
+            "year": 2021,
+            "result": "First Prize"
+        },
+        {
+            "name": "BME Mathematics Competition",
+            "year": 2020,
+            "result": "Third Prize"
+        },
+        {
+            "name": "25th International Mathematics Competition for University Students, Blagoevgrad, Bulgaria",
+            "year": 2018,
+            "result": "Second Prize"
+        },
+        {
+            "name": "BME Mathematics Competition",
+            "year": 2018,
+            "result": "Second Prize"
+        },
+        {
+            "name": "40th Hajós György National Mathematics Competition",
+            "year": 2018,
+            "result": "Individual First Prize"
+        }
+    ],
+    "education": [
+        {
+            "dateFrom": "2021. 04",
+            "dateTo": "2021. 09",
+            "name": "Technical University of Munich (TU München)",
+            "result": "",
+            "scholarships": [],
+            "note": "One semester within the Erasmus program"
+        },
+        {
+            "dateFrom": "2018. 09",
+            "dateTo": "2021. 09",
+            "name": "MSc studies in Computer Science, Budapest University of Technology and Economics, Faculty of Electrical Engineering and Informatics (BME)",
+            "result": "Excellent with highest honours",
+            "scholarships": [
+                "National scholarship for outstanding students in tertiary education."
+            ],
+            "note": ""
+        },
+        {
+            "dateFrom": "2015. 09",
+            "dateTo": "2018. 05",
+            "name": "BSc studies in Computer Science (BME)",
+            "result": "Excellent with highest honours",
+            "scholarships": [
+                "Admitted to the advanced level study program of the faculty (IMSc).",
+                "University scholarship for outstanding academic results.",
+                "National scholarship for outstanding students in tertiary education."
+            ],
+            "note": ""
+        }
+    ],
+    "languages": [
+        {
+            "name": "English",
+            "level": "C1",
+            "institution": "Cambridge Certification",
+            "year": 2014
+        },
+        {
+            "name": "German",
+            "level": "B1",
+            "institution": "Goethe Institut",
+            "year": 2015
+        },
+        {
+            "name": "Romanian",
+            "level": "B2",
+            "institution": "Maturita examination",
+            "year": 2015
+        },
+        {
+            "name": "Hungarian",
+            "level": "Native",
+            "institution": "",
+            "year": 0
+        }
+    ],
+    "programmingLanguagesAndTech": [
+        {
+            "name": "C++ (98/11)",
+            "level": "advanced"
+        },
+        {
+            "name": "C#",
+            "level": "advanced"
+        },
+        {
+            "name": "CUDA",
+            "level": "intermediate"
+        },
+        {
+            "name": "Elixir",
+            "level": "intermediate"
+        },
+        {
+            "name": "Java",
+            "level":  "advanced"
+        },
+        {
+            "name": "JavaScript",
+            "level":  "advanced"
+        },
+        {
+            "name": "Matlab",
+            "level": "intermediate"
+        },
+        {
+            "name": "OpenCL",
+            "level": "intermediate"
+        },
+        {
+            "name": "OpenGL",
+            "level":  "advanced"
+        },
+        {
+            "name": "Prolog",
+            "level": "intermediate"
+        },
+        {
+            "name": "Python",
+            "level":  "advanced"
+        },
+        {
+            "name": "SQL",
+            "level":  "advanced"
+        },
+        {
+            "name": "UNIX shell scripting",
+            "level": "intermediate"
+        },
+        {
+            "name": "WebGL",
+            "level":  "advanced"
+        },
+        {
+            "name": "TensorFlow",
+            "level":  "advanced"
+        },
+        {
+            "name": "NumPy",
+            "level": "advanced"
+        }
+    ],
+    "software": [
+        "TeXstudio (LaTeX)",
+        "PyCharm",
+        "Visual Studio Code",
+        "Visual Studio 2017",
+        "Windows and Linux-based OS'"
+    ],
+    "summerSchools": [
+        {
+            "name": "Prague Summer School on Discrete Mathematics",
+            "year": 2018,
+            "topics": [
+                "Combinatorics of posets: Sparsity and dimension",
+                "Discrepancy theory and algorithmic applications",
+                "Polynomial method"
+            ],
+            "webpage": "http://pssdm.math.cas.cz/2018/index.html"
+        },
+        {
+            "name": "Swedish Summer School in Computer Science",
+            "year": 2018,
+            "topics": [
+                "Quantum Computing",
+                "Lattices and Cryptography"
+            ],
+            "webpage": "https://s3cs.eecs.kth.se/2018/"
+        }        
+    ],
+    "workingExperience": [
+        {
+            "dateFrom": "2018. 06",
+            "dateTo": "2019. 06",
+            "title": "Scientific Assistant",
+            "institution": "Internship and research at the Hungarian Academy of Sciences, Centre for Economic and Regional Studies",
+            "details": [
+                "Research on matching under preferences"
+            ]
+        },
+        {
+            "dateFrom": "2016. 07",
+            "dateTo": "2019. 12",
+            "title": "Teaching Assistant",
+            "institution": "Budapest University of Technology and Economics (BME), Faculty of Electrical Engineering and Informatics, Department of Computer Science and Information Theory",
+            "details": [
+                "Introduction to the Theory of Computing 1 (linear algebra, seminar)",
+                "Theory of Algorithms (seminar)",
+                "Probability Theory (seminar)"
+            ]
+        }
+    ]
+}
