@@ -19,7 +19,7 @@
             "title": "InfoNCE: Identifying the Gap Between Theory and Practice",
             "venue": "Artificial Intelligence and Statistics (AISTATS)",
             "authors": "Evgenia Rusak, Patrik Reizinger, Attila Juhos, Oliver Bringmann, Roland S Zimmermann, Wieland Brendel",
-            "arxivLink": "https://arxiv.org/pdf/2407.00143",
+            "arxivLink": "https://arxiv.org/abs/2407.00143",
             "website": "https://brendel-group.github.io/AnInfoNCE/"
         },
         {
@@ -27,7 +27,7 @@
             "title": "Cross-Entropy Is All You Need To Invert the Data Generating Process",
             "venue": "The International Conference on Learning Representations (ICLR)",
             "authors": "Patrik Reizinger, Alice Bizeul, Attila Juhos, Julia E Vogt, Randall Balestriero, Wieland Brendel, David Klindt",
-            "arxivLink": "https://arxiv.org/pdf/2410.21869",
+            "arxivLink": "https://arxiv.org/abs/2410.21869",
             "website": ""
         },
         {
@@ -35,7 +35,7 @@
             "title": "Provable Compositional Generalization for Object-Centric Learning",
             "venue": "The International Conference on Learning Representations (ICLR)",
             "authors": "Thaddäus Wiedemer, Jack Brady, Alexander Panfilov, Attila Juhos, Matthias Bethge, Wieland Brendel",
-            "arxivLink": "https://arxiv.org/pdf/2310.05327",
+            "arxivLink": "https://arxiv.org/abs/2310.05327",
             "website": ""
         },
         {
@@ -43,7 +43,7 @@
             "title": "Pairwise preferences in the stable marriage problem",
             "venue": "ACM Transactions on Economics and Computation (TEAC)",
             "authors": "Ágnes Cseh, Attila Juhos",
-            "arxivLink": "https://arxiv.org/abs/1810.00392",
+            "arxivLink": "https://dl.acm.org/doi/abs/10.1145/3434427",
             "website": ""
         }
 
