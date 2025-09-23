@@ -64,8 +64,8 @@ export class AppComponent implements OnInit {
     const element = this.sectionElements['resume'];
     this.imgSrc =
       window.scrollY > element.offsetHeight / 2
-        ? 'assets/images/bg-2.jpg'
-        : 'assets/images/bg.jpg';
+        ? 'assets/images/bg-2.webp'
+        : 'assets/images/bg.webp';
   }
   public isActive(section: string): boolean {
     return this.activeSection === section;
