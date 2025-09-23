@@ -11,7 +11,7 @@ export class AppComponent implements OnInit {
   private activeSection: string = 'about';
   private sections: string[] = ['about', 'resume', 'research'];
   private sectionElements: { [key: string]: HTMLElement } = {};
-  public imgSrc: string = 'assets/images/bg.jpg';
+  public imgSrc: string = 'assets/images/bg.webp';
 
   constructor() {}
 
