@@ -1297,13 +1297,6 @@ button:not(:disabled),
 }
 
 @font-face {
-  font-family: "Computer Modern";
-  font-display: swap;
-  src: url(assets/fonts/computer-modern-regular.ttf) format("truetype");
-  font-style: normal
-}
-
-@font-face {
   font-family: "Computer Modern Bold";
   font-display: swap;
   src: url(assets/fonts/computer-modern-bold.ttf) format("truetype");
@@ -1439,4 +1432,5 @@ button:not(:disabled),
 
 .font-small {
   font-size: 1rem
+
 }
