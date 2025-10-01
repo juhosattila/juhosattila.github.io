@@ -456,35 +456,3 @@ Remove the related _.json_ entry but not the post. This way the post won't be di
 1. **Commit** your changes to the _main_ branch.
 2. _Don't_ modify the branch _gh-pages_. It's auto-updated.
 3. After no more than 10 minutes you should see the changes on your website.
-
-
-## Potential issues
-
-If the website wasn't updated after a commit, check the **Actions** tab of the github repo. You should find a workflow run with the same name as your commit. 
- The
-<img src="src/assets/images/docs/image.png" alt="error" width="10"/>  symbol mneans that the build was unsuccessful. 
-![alt text](src/assets/images/docs/image-2.png)
-
-Open the latest build and then click the build button in there to see the error message. You will see something similar:
-![alt text](src/assets/images/docs/image-3.png)
-
-## Troubleshooting
-
-![alt text](src/assets/images/docs/image-4.png)
-This error is likely caused by an expired or deleted access token. 
-
-**Note:** To resolve this issue, you have to be logged in to the respoitory **owner account**. Contributor account permissions aren't sufficient.
-
- Open the **account settings** > _Developer settings_ . Navigate to Personal access tokens and check whether you have a token generated. If the token is missing, click _Fine-grained tokens_ and _Generate new token_ . Give your token a name and set an expiration date. Note, that after this date you will have to renew the token. In the repository access section choose the _Only selected repositories_ option and choose the _github.io_ repo from the dropdown. In the _Permissions_ section click Repository permissions and set the permissions according to the [github docs recommendations](https://docs.github.com/en/actions/security-for-github-actions/security-guides/automatic-token-authentication#permissions-for-the-github_token). Click generate token. **Save** the generated token.
-![alt text](src/assets/images/docs/image-5.png)
-
-Now open the **repository settings** and choose _Secrets and variables_ > _Actions_ menu item. If there is a secret with the name **ACCESS_TOKEN** (or a name that matches the GITHUB_TOKEN property value in the project's main.yml file), click edit and paste the generated token to the _Value_ field and click _Update secret_. If the secret doesn't exist yet, click _New repository secret_, give it a name (e.g. ACCESS_TOKEN), paste the generated token and click _Add secret_. 
-
-As a last step, check the _.github/workflows/main.yml_ file in the project. Make sure the GITHUB_TOKEN has the same name as the secret you just created.
-
-![alt text](src/assets/images/docs/image-7.png)
-**.github/workflows/main.yml:**
-
-![alt text](src/assets/images/docs/image-6.png)
-
-Create a new commit, the error should be now resolved.
