@@ -1296,17 +1296,17 @@ button:not(:disabled),
   padding: 5rem 0
 }
 
-@font-face {
+/* @font-face {
   font-family: "Computer Modern";
   font-display: swap;
   src: url(assets/fonts/computer-modern-regular.ttf) format("truetype");
   font-style: normal
-}
+} */
 
 @font-face {
   font-family: "Computer Modern Bold";
   font-display: swap;
-  src: url(assets/fonts/computer-modern-bold.ttf) format("truetype");
+  src: url(../fonts/computer-modern-bold.ttf) format("truetype");
   font-style: normal
 }
 
