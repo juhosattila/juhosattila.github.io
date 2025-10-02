@@ -1,0 +1,175 @@
+{
+    "conferences": [
+        {
+            "date": "2019. 03.",
+            "nameShort": "STACS 2019",
+            "nameLong": "36th International Symposium on Theoretical Aspects of Computer Science",
+            "country": "Germany",
+            "city": "Berlin",
+            "institution": "TU Berlin",
+            "paperTitle": "Pairwise preferences in the stable marriage problem",
+            "webpage": "https://stacs2019.akt.tu-berlin.de",
+            "paperLink": "https://dl.acm.org/doi/fullHtml/10.1145/3434427",
+            "authors": "Ágnes Cseh & Attila Juhos"
+        }
+    ],
+    "publications": [
+        {
+            "date": 2025,
+            "title": "InfoNCE: Identifying the Gap Between Theory and Practice",
+            "venue": "Artificial Intelligence and Statistics (AISTATS)",
+            "authors": "Evgenia Rusak, Patrik Reizinger, Attila Juhos, Oliver Bringmann, Roland S Zimmermann, Wieland Brendel",
+            "arxivLink": "https://arxiv.org/abs/2407.00143",
+            "website": "https://brendel-group.github.io/AnInfoNCE/"
+        },
+        {
+            "date": 2024,
+            "title": "Cross-Entropy Is All You Need To Invert the Data Generating Process",
+            "venue": "The International Conference on Learning Representations (ICLR)",
+            "authors": "Patrik Reizinger, Alice Bizeul, Attila Juhos, Julia E Vogt, Randall Balestriero, Wieland Brendel, David Klindt",
+            "arxivLink": "https://arxiv.org/abs/2410.21869",
+            "website": ""
+        },
+        {
+            "date": 2023,
+            "title": "Provable Compositional Generalization for Object-Centric Learning",
+            "venue": "The International Conference on Learning Representations (ICLR)",
+            "authors": "Thaddäus Wiedemer, Jack Brady, Alexander Panfilov, Attila Juhos, Matthias Bethge, Wieland Brendel",
+            "arxivLink": "https://arxiv.org/abs/2310.05327",
+            "website": ""
+        },
+        {
+            "date": 2021,
+            "title": "Pairwise preferences in the stable marriage problem",
+            "venue": "ACM Transactions on Economics and Computation (TEAC)",
+            "authors": "Ágnes Cseh, Attila Juhos",
+            "arxivLink": "https://dl.acm.org/doi/abs/10.1145/3434427",
+            "website": ""
+        }
+
+    ],
+    "research": [
+        {
+            "dateFrom": "2019. 06.",
+            "dateTo": "2021. 05.",
+            "title": "Medical (CT) image reconstructions with distinguished interest in CNN-based regularisation and iterative techniques.",
+            "supervisor": "Dániel Hadházi",
+            "supervisorsInstitution": "BME, Department of Measurement and Information Systems",
+            "supporter": "Ministry of Human Capacities under its New National Excellence Program (one year + half year)."
+        },
+        {
+            "dateFrom": "2018. 09.",
+            "dateTo": "2019. 08.",
+            "title": "The stable roommates problem with special interest in approximation algorithms for finding egalitarian stable roommates. The stable marriage problem with generalised preference structures.",
+            "supervisor": "Dr. Ágnes Cseh",
+            "supervisorsInstitution": "Hungarian Academy of Sciences, Centre for Economic and Regional Studies",
+            "supporter": "Cooperation of Excellences Grant, by the Ministry of Human Capacities under its New National Excellence Program (one year)."
+        },
+        {
+            "dateFrom": "2017. 09.",
+            "dateTo": "2017. 12.",
+            "title": "Performance modelling and analysis of distributed P2P download systems.",
+            "supervisor": "Dr. János Levendovszky",
+            "supervisorsInstitution": "BME Department of Networked Systems and Services",
+            "supporter": ""
+        }
+    ],
+    "studentConferences": [
+        {
+            "conference": {
+                "date": "2021. 05.",
+                "nameShort": "TDK",
+                "nameLong": "Scientific Conference for Students",
+                "country": "Hungary",
+                "city": "Budapest",
+                "institution": "Eötvös Loránd University, Faculty of Informatics",
+                "paperTitle": "CNN-based iterative regularisation for CT image reconstructions.",
+                "webpage": "http://tda.inf.elte.hu/index.php?option=com_tdk&view=results",
+                "paperLink": "",
+                "authors": ""
+            },
+            "supervisor": "Dániel Hadházi",
+            "result": "Second prize"
+        },
+        {
+            "conference": {
+                "date": "2021. 03.",
+                "nameShort": "OTDK",
+                "nameLong": "National Scientific Conference for Students",
+                "country": "Hungary",
+                "city": "Budapest",
+                "institution": "Eötvös Loránd University, Faculty of Informatics",
+                "paperTitle": "Neural network-aided tomographic reconstructions.",
+                "webpage": "",
+                "paperLink": "",
+                "authors": ""
+            },
+            "supervisor": "Dániel Hadházi",
+            "result": "Special prize"
+        },
+        {
+            "conference": {
+                "date": "2020. 05.",
+                "nameShort": "TDK",
+                "nameLong": "Scientific Conference for Students",
+                "country": "Hungary",
+                "city": "Budapest",
+                "institution": "Eötvös Loránd University, Faculty of Informatics",
+                "paperTitle": "Neural network-aided tomographic reconstructions.",
+                "webpage": "",
+                "paperLink": "",
+                "authors": ""
+            },
+            "supervisor": "Dániel Hadházi (BME Department of Measurement and Information Systems)",
+            "result": "Second prize"
+        },
+        {
+            "conference": {
+                "date": "2019. 04.",
+                "nameShort": "OTDK",
+                "nameLong": "National Scientific Conference for Students",
+                "country": "Hungary",
+                "city": "Budapest",
+                "institution": "Budapest University of Technology and Economics, Faculty of Electrical Engineering and Informatics",
+                "paperTitle": "Egalitarian solutions in the stable roommates problem.",
+                "webpage": "",
+                "paperLink": "",
+                "authors": ""
+            },
+            "supervisor": "Dr. Ágnes Cseh (Hungarian Academy of Sciences, Centre for Economic and Regional Studies), Dr. Tamás Fleiner (BME Department of Computer Science and Information Theory)",
+            "result": "Second prize"
+        },
+        {
+            "conference": {
+                "date": "2018. 11.",
+                "nameShort": "TDK",
+                "nameLong": "Scientific Conference for Students",
+                "country": "Hungary",
+                "city": "Budapest",
+                "institution": "Budapest University of Technology and Economics, Faculty of Electrical Engineering and Informatics",
+                "paperTitle": "Egalitarian solutions in the stable roommates problem.",
+                "webpage": "",
+                "paperLink": "",
+                "authors": ""
+            },
+            "supervisor": "Dr. Ágnes Cseh, Dr. Tamás Fleiner",
+            "result": "First prize"
+        },
+        {
+            "conference": {
+                "date": "2017. 11.",
+                "nameShort": "TDK",
+                "nameLong": "Scientific Conference for Students",
+                "country": "Hungary",
+                "city": "Budapest",
+                "institution": "Budapest University of Technology and Economics, Faculty of Electrical Engineering and Informatics",
+                "paperTitle": "Performance modelling and analysis of distributed P2P download systems.",
+                "webpage": "",
+                "paperLink": "",
+                "authors": ""
+            },
+            "supervisor": "Dr. János Levendovszky (BME Department of Networked Systems and Services)",
+            "result": "Third prize"
+        }
+    ]
+}
